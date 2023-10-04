@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="88.66mm" height="49.774mm" version="1.1" viewBox="0 0 88.66 49.774" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="radialGradient15252" cx="400.41" cy="177.75" r="86.12" gradientTransform="matrix(1 0 0 .99997 0 .0045901)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#79d35e" offset="0"/>
+   <stop stop-color="#4aa72e" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="translate(-83.156 -20.04)">
+  <path transform="scale(.26458)" d="m401.31 92.137v87.373h-2.5644v-87.322a85.62 85.62 0 0 0-83.959 85.557 85.62 85.62 0 0 0 85.619 85.621 85.62 85.62 0 0 0 85.619-85.621 85.62 85.62 0 0 0-84.715-85.607z" fill="url(#radialGradient15252)" stroke="#000" stroke-width="1.0016"/>
+  <text x="153.86011" y="50.326916" font-family="sans-serif" font-size="7.0556px" font-weight="bold" letter-spacing="0px" stroke-width=".59898" text-anchor="middle" word-spacing="0px" style="line-height:0.95" xml:space="preserve"><tspan x="153.86011" y="50.326916" text-align="center">100%</tspan><tspan x="153.86011" y="57.029697" text-align="center">mineable</tspan></text>
+  <g fill="none">
+   <path d="m87.313 38.365c3.9688-6.6146 9.2604-10.583 15.875-11.906" opacity=".34199" stroke="#fff" stroke-linecap="round" stroke-width="1.565"/>
+   <path d="m105.83 24.342 3.9688-3.9688 17.198-1e-6 14.552 14.023" stroke="#ff0101" stroke-width=".665"/>
+   <path d="m128.59 47.625h12.965" stroke="#000" stroke-width=".665"/>
+  </g>
+  <text x="142.57262" y="37.153534" font-family="sans-serif" font-size="7.0556px" letter-spacing="0px" stroke-width=".59898" word-spacing="0px" style="line-height:0.25" xml:space="preserve"><tspan x="142.57262" y="37.153534" font-size="7.0556px" stroke-width=".59898"><tspan font-family="sans-serif" font-size="7.0556px" font-weight="bold">0% </tspan>💩 </tspan></text>
+ </g>
+</svg>
