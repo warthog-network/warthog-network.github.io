@@ -1,0 +1,124 @@
+<div data-block="get-started" hidden>
+<div class="content-block">
+	<div class="flex around">
+		<h1>NODE</h1>
+		<h1>—</h1>
+		<h1>WALLET</h1>
+		<h1>—</h1>
+		<h1>MINING</h1>
+		<h1>—</h1>
+		<h1>POOL</h1>
+	</div>
+	<h2>NODE</h2>
+	<span>At the moment, for any actions on the Warthog network, you need to run an instance of the node on your computer. Currently, the pre-compiled node executable file availabel for Windows, macOS (only arm), Linux (Ubuntu, Debian). You can download it from <a href="https://github.com/warthog-network/Warthog/releases" target="_blank">here</a>. Аfter launch, node will start synchronizing the blockchain, after it is completed, it will be possible to perform operations with the wallet and start mining.</span>
+	<pre>
+./wart-node
+
+[info] Warthog Node v0.1.19
+[info] Chain database: /path/to/Warthog/chain.db3
+[info] Peers database: /path/to/Warthog/peers.db3
+[info] 0 IPs are currently blacklisted.
+[info] Cache has 0 entries
+[info] Chain info: length 0, work 0
+[info] Chain snapshot not present
+[info] P2P endpoint is 0.0.0.0:9186.
+[info] RPC endpoint is 127.0.0.1:3000.
+[info] Connected to 1 peers
+[info] Connected to 14 peers
+[info] Syncing... (height 0 of 17280)</pre>
+</div>
+<div class="content-block">
+	<h2>WALLET</h2>
+	<span>To use a wallet, you need to download pre-compiled wallet executable file from <a href="https://github.com/warthog-network/Warthog/releases" target="_blank">here</a>. Currently support Windows, macOS (only arm), Linux (Ubuntu, Debian), but you can compile </span>
+	<h3>Create wallet</h3>
+	<span>To create the wallet you need just run next command:</span>
+	<br>
+	<pre>
+./wart-wallet -c</pre>
+	<span>In output you get wallet address, private and public keys. This information will be saved to the wallet.json file. </span>
+	<pre>
+Wallet file created.
+{
+   "address": "5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64",
+   "privateKey": "2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a",
+   "publicKey": "0285a33afacea56262b44b8b96f4affa8f31cc51d3065eb37e43c0d0cf979a2872"
+}</pre>
+	<h3>Check balance</h3>
+	<span>If you want check your balance run command:</span>
+	<pre>
+./wart-wallet -b</pre>
+	<span>In output you get balance of your wallet</span>
+	<h3>Send coins</h3>
+	<span>To send some coins, use command:</span>
+	<pre>
+./wart-walet -s --to=%address% --amount %count% --fee 0</pre>
+	<pre>
+./wart-walet -s --to=9da0dc31d0c3bcaaeaf422be6499fbf451b314fa622be978 --amount 0.00000001 --fee 0</pre>
+	<span>Next, you will be shown the details of the transaction and if you agree with them, you need to confirm it</span>
+	<pre>
+Summary:
+   To:     9da0dc31d0c3bcaaeaf422be6499fbf451b314fa622be978
+   Fee:    0.00000001
+   Amount: 0.00000001
+   Nonce: 4262777042
+Confirm with "y": y</pre>
+	<span>And your transaction added to blockchain</span>
+	<pre>
+Get pin
+Got pin
+NonceId: 4262777042
+pinHeight: 896450
+pinHeight: 896450
+pinHash: 2452592e211a10b97da31e4b681aafe49b93321776580278b0c39fc5bae84558
+=====DEBUG INFO TRANSACTION JSON=====
+{
+   "amount": "0.00000001",
+   "fee": "0.00000001",
+   "nonceId": 4262777042,
+   "pinHeight": 896450,
+   "signature65": "53d429fa34ef05f9f413b4eb57...9c189ae3078894cb01aee91eda2201",
+   "toAddr": "9929fdce19b2a71cf0950263baa71478ef1980f8c7d9ccb3"
+}
+=====================================
+Transaction accepted.</pre>
+	<h3>Restore</h3>
+	<span>To restore your wallet.json file, you need run command:</span>
+	<pre>
+./wart-wallet -r %your private key%</pre>
+	<span>In output you get wallet address, private and public keys and </span>
+	<pre>
+./wart-wallet -r 2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a
+Wallet file created.
+{
+   "address": "5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64",
+   "privateKey": "2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a",
+   "publicKey": "0285a33afacea56262b44b8b96f4affa8f31cc51d3065eb37e43c0d0cf979a2872"
+}</pre>
+</div>
+<div class="content-block">
+	<h2>MINER</h2>
+	<span>To start mine this coin you need to download janusminer <a href="https://github.com/CoinFuMasterShifu/janusminer/releases" target="_blank">here</a>. Current stable version is <a href="https://github.com/CoinFuMasterShifu/janusminer/releases/tag/0.0.4" target="_blank">0.0.4</a>. Now miner have <b>ONLY Linux</b> support with OpenCL API.</span>
+	<pre>
+./janusminer -a %wallet% -h %host_ip% -p %node_port%
+
+./janusminer -a 5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64 -h 192.168.1.1 -p 3000
+Janushash Miner (By CoinFuMasterShifu) ⚒ ⛏
+[info] Node RPC is 192.168.1.1:3000
+OpenCL installations for the following GPUs were detected:
+[0]: NVIDIA GeForce RTX 4070
+Using all GPUs.
+Using 16 CPU threads for Verushash
+[warning] CPU queue drained
+[info] Total hashrate (GPU): 203.929200 mh/s
+[info]    NVIDIA GeForce RTX 4070: 203.929200 mh/s
+[info] Total hashrate (CPU): 16.734208 mh/s
+[info]    Thread#0: 940.485000 kh/s
+...
+[info]    Thread#15: 861.117000 kh/s
+[info] Janusscore: 72.634461 mh/s</pre>
+</div>
+<div class="content-block">
+	<h2>POOL</h2>
+	<span>At the moment, the pool is under development, you can follow the development in more detail in <a href="https://discord.com/invite/QMDV8bGTdQ" target="_blank">Discord</a></span>
+</div>
+</div>
