@@ -9,12 +9,12 @@
 	<h3>Abstract</h3>
 	<span>This white paper is a work in progress.</span>
 	<h2>1. Introduction and Project goals</h2>
-	<span>Warthog is a classical Proof-of-Work (PoW) based cryptocurrency which is meant to be a fun and experimental side project of its developers Pumbaa, Timon and Rafiki who work in blockchain industry.</span>
-	<span>We are working on Warthog in our free time and there is always the risk that we leave due to time constraints or personal reasons. In fact our colleague Timon has already left the team. Therefore we are trying to build up a strong community backing the project.</span>
+	<span>Warthog is a classical Proof-of-Work (PoW) based cryptocurrency meant to be a fun and experimental side project of its developers Pumbaa, Timon and Rafiki who work in blockchain industry.</span>
+	<span>We are working on Warthog in our free time, and there is always the risk that we may leave due to time constraints or personal reasons. In fact, our colleague Timon has already left the team. Therefore we are trying to build up a strong community backing the project.</span>
 	<span>Mainly one can describe this project as an experiment to try out new things and learn how blockchain technology works in detail. But at the same time we want to be as transparent and fair as possible and avoid as much as possible fishy and questionable practice currently seen in most other new projects.</span>
 	<span>The code is freshly written in C++20 and is not a cheap fork of any other project. Therefore there is always the risk of serious or unfixable bugs. But at the same time there is real effort put into this project which sets it apart from most competitors.</span>
 	<span>The community is welcome to take actively part in the evolution of Warthog, the logo and the explorer are made by volunteers and also possible choices for a mining algorithm are proposed. The connection with the community shall be preserved and extended in the future. If you want to join, please do so!</span>
-	<span>There is no specific purpose or use case of Warthog. However we want to revive the days when crypto was a fun and an interesting experimental thing. One of our experiments with this project is to use SQLite to store blocks and state. Another is the completely novel idea of syncing nodes via *chain descriptors* instead of asking other nodes for blocks by their hashes.</span>
+	<span>There is no specific purpose or use case of Warthog. However we want to revive the days when crypto was a fun and an interesting experimental thing. One of our experiments with this project is using SQLite to store blocks and state. Another is the completely novel idea of syncing nodes via *chain descriptors* instead of asking other nodes for blocks by their hashes.</span>
 	<span>One design principle of Warthog is fast sync speed and a low impact on system resources which is achieved by the use of fast hashing algorithms, appropriate data structures and our custom-built sync algorithm.</span>
 	<span>For now and in the near future the primary plan is to make the node implemen- tation more robust and improve infrastructure like explorer and API for better interoperability.</span>
 
@@ -49,7 +49,7 @@
 	<span>For easier integration all API endpoints return both, the WART amount as a string (like “"amount": "12.0"”), and the internal integer representation indicated with label “E8” (like “"amountE8": 1200000000”).</span>
 
 	<h3>2.4 One-of-a-kind chain descriptor based sync</h3>
-	<span>This project is an experiment where the developers try out new things and push the boundary of what is possible in blockchain technology. We invented a completely unique and new way of syncing nodes which is not presently not known to the industry.</span>
+	<span>This project is an experiment where the developers try out new things and push the boundary of what is possible in blockchain technology. We invented a completely unique and new way of syncing nodes which is presently not known to the industry.</span>
 	<span>Traditionally during synchronization new nodes request block bodies identified by block hashes. The replying node has to look up the block body based on the hash and then sends it back.</span>
 	<span>In contrast we have invented a node communication protocol which works with- out block hashes for block body lookup. In our setup nodes keep track on fork heights with other nodes. A *chain descriptor* is used to identify a specific chain on the peer. When a node appends to its chain, the chain descriptor remains unchanged, however the current chain descriptor is increased when the consensus chain switches to a longer fork. Block bodies for previous chains are also kept for some time in case a peer requests them.</span>
 	<span>When syncing nodes request block bodies identified by a chain descriptor and a block range. This way we avoid overhead in communication and lookup.</span>
