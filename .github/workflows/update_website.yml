@@ -6,6 +6,10 @@ name: Update Website CI
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'whitepaper/**'
+  repository_dispatch:
+    types: [update-website]
 
 jobs:
   build:
