@@ -135,5 +135,8 @@
 	"repository": {
 		"type": "git",
 		"url": ""
+	},
+	"dependencies": {
+		"gulp-cheerio": "^1.0.0"
 	}
 }

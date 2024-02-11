@@ -16,11 +16,11 @@
 <li>In the initial phase the difficulty is adjusted every 720 blocks which corresponds to approximately 4 hours.</li>
 <li>In the second phase the difficulty is adjusted every 8640 blocks which corresponds to 2 days.</li>
 </ul>
-<p>The reason for this two-phase approach is the high variability of hashrate in early stages of a project&#39;s life which initially requires a more frequent difficulty adjustment. On the other hand too short intervals also have disadvantages such as the tendency to oscillate and a possibly higher impact of faked timestamps. Therefore the second phase stretches the difficulty adjustment interval after the initial phase.</p>
+<p>The reason for this two-phase approach is the high variability of hashrate in early stages of a project&apos;s life which initially requires a more frequent difficulty adjustment. On the other hand too short intervals also have disadvantages such as the tendency to oscillate and a possibly higher impact of faked timestamps. Therefore the second phase stretches the difficulty adjustment interval after the initial phase.</p>
 <p>While in Bitcoin the difficulty change is capped by factor 4, we have implemented a factor 2 cap because our difficulty adjustment is more frequent than 2 weeks.</p>
 <h3>Emission Scheme</h3>
 <p>Warthog was started without any premined or reserved amount of coins on June 29, 2023. The project implements a classical halving-based emission scheme with halvings occurring every 3153600 blocks (every 2 years). The emission for the next 4 years is summarized in the following table:</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>Date</th>
@@ -69,7 +69,7 @@
 <p>SQLite databases are also portable across 32-bit and 64-bit machines and between big-endian and little-endian architectures such that chain snapshots can easily shared. Furthermore SQLite supports transactions which are essential for data integrity even in case of a power outage or node crash.</p>
 <p>The default SQLite database file name used for the chain is <code>chain.db3</code> and can be configured via the <code>--chain-db</code> command line option</p>
 <h3>Account based architecture</h3>
-<p>Warthog implements an account based architecture. This is similar to Ethereum and different from Bitcoin&#39;s UTXO model. Every account along with its balance is stored in the <code>State</code> table of the chain database. For efficiency reasons accounts are referred by their id: Every account is assigned a unique auto-incremented id value on first use. This makes blocks more space-efficient since a block id only requires 8 bytes of storage whereas an address would require 20 bytes.</p>
+<p>Warthog implements an account based architecture. This is similar to Ethereum and different from Bitcoin&apos;s UTXO model. Every account along with its balance is stored in the <code>State</code> table of the chain database. For efficiency reasons accounts are referred by their id: Every account is assigned a unique auto-incremented id value on first use. This makes blocks more space-efficient since a block id only requires 8 bytes of storage whereas an address would require 20 bytes.</p>
 <h3>Anatomy of a block</h3>
 <p>The binary content of a block is a concatenation of the following sections in their specified order:</p>
 <ol>
@@ -81,7 +81,7 @@
 <p>Below we describe the above sections. All numbers and id values are in network byte order.</p>
 <h4>Mining section</h4>
 <p>This section allows miners to put 4 bytes of arbitrary data to affect the merkle hash.</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
@@ -95,7 +95,7 @@
 </tbody></table>
 <h4>New address section</h4>
 <p>This section lists new addresses that receive payments in this block and therefore need to be added to the <code>state</code> table. This way they will be assigned a new id value which is referenced in the other sections to specify a particular account.</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
@@ -114,7 +114,7 @@
 <p>Miners are responsible to ensure that the addresses appearing in the new address section are <strong>not already present in the state table</strong> and <strong>are actually referenced in this block</strong>. Otherwise the block is considered invalid.</p>
 <h4>Reward section</h4>
 <p>Mining reward is distributed to at least one reward address.</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
@@ -131,7 +131,7 @@
 </tr>
 </tbody></table>
 <p>Every reward entry consists of 16 bytes:</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
@@ -151,7 +151,7 @@
 <p>The total size of the mining section is 2+ <code>r</code>*16 bytes.</p>
 <h4>Transfer section</h4>
 <p>The transfer section contains the transfers made in this block. Its binary outline is as follows:</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
@@ -168,7 +168,7 @@
 </tr>
 </tbody></table>
 <p>Every transfer entry has the following structure:</p>
-<table>
+<table style="margin: 0 auto;">
 <thead>
 <tr>
 <th>byte range</th>
