@@ -18,6 +18,8 @@ const cleanss = require('gulp-cleancss');
 const minify = require('gulp-minify');
 const gulpIf = require('gulp-if');
 const fileinclude = require('gulp-file-include');
+const md = require('./md_to_html.js');
+
 
 let PROD = false;
 
@@ -129,6 +131,10 @@ const reloadServer = (source) => {
     .pipe(server.stream());
 };
 
+gulp.task('md', function() {
+  return md().catch(console.error);
+});
+
 const startServer = (cb) => {
   server.init({
     server: DST_HTML,
@@ -150,7 +156,7 @@ const setProdaction = (cb) => {
   cb();
 };
 
-const build = series(clear, parallel(buildHtml, buildStyle, copyImg, copyFonts, buildJs, copyJsExternal));
+const build = series(clear, parallel(buildHtml, buildStyle, copyImg, copyFonts, buildJs, copyJsExternal,md));
 
 exports.dev = series(build, startServer);
 exports.prod = series(setProdaction, build);
