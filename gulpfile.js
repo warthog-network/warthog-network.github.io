@@ -156,7 +156,7 @@ const setProdaction = (cb) => {
   cb();
 };
 
-const build = series(clear, parallel(buildHtml, buildStyle, copyImg, copyFonts, buildJs, copyJsExternal,md));
+const build = series(clear,md, parallel(buildHtml, buildStyle, copyImg, copyFonts, buildJs, copyJsExternal));
 
 exports.dev = series(build, startServer);
 exports.prod = series(setProdaction, build);
