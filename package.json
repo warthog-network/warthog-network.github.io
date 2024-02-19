@@ -3,7 +3,7 @@
 	"description": "",
 	"version": "1.0.0",
 	"main": "",
-	"author": "TropichevPavel",
+	"author": "",
 	"license": "ISC",
 	"homepage": "",
 	"devDependencies": {
@@ -33,8 +33,6 @@
 			"html"
 		],
 		"ignorePatterns": [
-			"src/js/tools/cropper.js",
-			"src/js/tools/datepicker.js"
 		],
 		"rules": {
 			"indent": [

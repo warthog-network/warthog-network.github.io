@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 		<title>Warthog Network</title>
 		<link href="./css/style.css" rel="stylesheet" type="text/css">
@@ -50,7 +50,7 @@
 				</div>
 				<div id="menu__mobile-exp" class="expand" hidden></div>
 			</nav>
-			<img src="./img/main_logo.png" class="header__img-logo opacity_0">
+			<div class="flex row p_v_10px opacity_0"><img src="./img/main_logo.png" class="header__img-logo"><label for="menu__btn-exp" class="header__img-menu" hidden><img src="/img/menu.svg"></label></div>
 			<div id="content" class="flex column expand">
 				@@include('./pages/main.html')
 				@@include('./pages/get-started.html')

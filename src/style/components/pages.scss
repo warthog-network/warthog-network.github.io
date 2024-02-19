@@ -7,7 +7,7 @@
 	max-width: 1350px;
 	font-size: 1.5em;
 	margin: auto;
-	padding-top: 1em;
+	padding-bottom: 1em;
 	text-align: justify;
 	overflow: hidden;
 }
@@ -15,6 +15,11 @@
 .content-block:last-child
 {
 	padding-bottom: 1.5em;
+}
+
+[data-block="whitepaper"] > div
+{
+	margin-bottom: 1.5em;
 }
 
 .content-block h1
@@ -105,7 +110,7 @@
 
 
 
-@media (max-width: 575px)
+@media (max-width: $mobile-width)
 {
 	[data-block="main"] .content-block:nth-child(1) > div,
 	[data-block="main"] .content-block:nth-child(2) > div
@@ -136,4 +141,3 @@
 		font-size: .85em;
 	}
 }
-
