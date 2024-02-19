@@ -11,16 +11,7 @@ body
 	height: 100vh;
 }
 
-@media (max-width: 575px)
-{
-	html,
-	body
-	{
-		min-width: none;
-	}
-}
-
-@media (min-width: 576px)
+@media (min-width: $mobile-width)
 {
 	html,
 	body
@@ -52,8 +43,13 @@ h3
 
 a
 {
-	color: #FDAC12;
+	color: #F20544;
 	text-decoration: none;
+}
+
+span a
+{
+	border-bottom: 1px solid #F20544;
 }
 
 b
@@ -86,8 +82,6 @@ b.lite
 	src: url('/fonts/Montserrat-Light.ttf');
 }
 
-
-
 code
 {
 	background-color: #eee;
@@ -109,15 +103,12 @@ pre
 	overflow-x: hidden;
 	overflow-y: scroll;
 	color: #000;
-	// background-color: #E9E9E9;// rgba(25, 23, 24, 0.83);
 }
 
 #content
 {
 	padding-top: 2rem;
 }
-
-
 
 [data-block="main"]
 {
@@ -199,19 +190,6 @@ th, td
 {
 	padding: 0 1em;
 }
-
-
-
-// td
-// {
-// 	font-size: 0.8em;
-// }
-
-// td:first-child
-// {
-// 	padding-right: 20px;
-// 	text-align: right;
-// }
 
 #footer
 {
@@ -335,6 +313,12 @@ th, td
 	padding-right: 2em;
 }
 
+.p_v_10px
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .bg_white
 {
 	background: #FFF;
@@ -373,11 +357,30 @@ b.shadow
 	text-align: right;
 }
 
-@media (max-width: 575px)
+.mobile
+{
+	display: none;
+}
+
+@media (max-width: $mobile-width)
 {
 	.flex
 	{
 		flex-direction: column;
 	}
-}
 
+	.flex.mobile
+	{
+		display: flex;
+	}
+
+	.mobile
+	{
+		display: block;
+	}
+
+	.desktop
+	{
+		display: none;
+	}
+}

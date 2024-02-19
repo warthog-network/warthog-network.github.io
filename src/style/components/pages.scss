@@ -1,13 +1,11 @@
 
 .content-block
 {
-	// width: 80%;
-	// width: 1350px;
 	width: calc(100% - 2em);
 	max-width: 1350px;
 	font-size: 1.5em;
 	margin: auto;
-	padding-top: 1em;
+	padding-bottom: 1em;
 	text-align: justify;
 	overflow: hidden;
 }
@@ -104,8 +102,7 @@
 }
 
 
-
-@media (max-width: 575px)
+@media (max-width: $mobile-width)
 {
 	[data-block="main"] .content-block:nth-child(1) > div,
 	[data-block="main"] .content-block:nth-child(2) > div
@@ -137,3 +134,9 @@
 	}
 }
 
+// WHITEPAPER PAGE
+
+[data-block="whitepaper"] > div
+{
+	margin-bottom: 1.5em;
+}

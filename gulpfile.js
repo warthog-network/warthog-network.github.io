@@ -53,19 +53,10 @@ const buildHtml = () => {
       htmlmin({
         collapseWhitespace: true,
         trimCustomFragments: true,
-        collapseInlineTagWhitespace: true,
+        // collapseInlineTagWhitespace: true,
         removeComments: true
       })))
     .pipe(dest(DST_HTML));
-
-    // gulp.task('fileinclude', function() {
-    //   gulp.src(['index.html'])
-    //     .pipe(fileinclude({
-    //       prefix: '@@',
-    //       basepath: '@file'
-    //     }))
-    //     .pipe(gulp.dest('./'));
-    // });
 };
 
 const buildStyle = () => {
