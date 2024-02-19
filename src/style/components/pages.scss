@@ -1,8 +1,6 @@
 
 .content-block
 {
-	// width: 80%;
-	// width: 1350px;
 	width: calc(100% - 2em);
 	max-width: 1350px;
 	font-size: 1.5em;
@@ -15,11 +13,6 @@
 .content-block:last-child
 {
 	padding-bottom: 1.5em;
-}
-
-[data-block="whitepaper"] > div
-{
-	margin-bottom: 1.5em;
 }
 
 .content-block h1
@@ -109,7 +102,6 @@
 }
 
 
-
 @media (max-width: $mobile-width)
 {
 	[data-block="main"] .content-block:nth-child(1) > div,
@@ -140,4 +132,11 @@
 	{
 		font-size: .85em;
 	}
+}
+
+// WHITEPAPER PAGE
+
+[data-block="whitepaper"] > div
+{
+	margin-bottom: 1.5em;
 }
