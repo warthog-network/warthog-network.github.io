@@ -43,13 +43,13 @@ h3
 
 a
 {
-	color: #F20544;
+	color: $color-a;
 	text-decoration: none;
 }
 
 span a
 {
-	border-bottom: 1px solid #F20544;
+	border-bottom: 1px solid $color-a;
 }
 
 b
@@ -265,6 +265,11 @@ th, td
 	width: 30%;
 }
 
+.w_50
+{
+	width: 50%;
+}
+
 .mp_0_all *
 {
 	padding: 0;
@@ -327,6 +332,11 @@ th, td
 .opacity_0
 {
 	opacity: 0;
+}
+
+.opacity_06
+{
+	opacity: 0.6;
 }
 
 div.shadow
