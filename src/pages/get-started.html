@@ -100,7 +100,39 @@ Wallet file created.
 </div>
 <div class="content-block">
 	<h2>MINER</h2>
-	<span>To start mine this coin you need to download janusminer <a href="https://github.com/CoinFuMasterShifu/janusminer/releases" target="_blank">here</a>. Current stable version is <a href="https://github.com/CoinFuMasterShifu/janusminer/releases/tag/0.0.4" target="_blank">0.0.4</a>. Now miner have <b>ONLY Linux</b> support with OpenCL API.</span>
+	<h3>Bzminer</h3>
+	<span>  BZ miner is the first professional miner that supports mining on the Warthog Network chain. Support for Warthog was added in version 21.0.3. It supports Nvidia, Amd and Intel GPUs and Intel as well as AMD processors (desktop and server platforms). Mining either to pool or solo to node in stratum mode. Available in all major mining OSes as well as various systems executable available <a href="https://www.bzminer.com/">here</a> </span>
+
+	<pre style="overflow: auto; max-height: 200px;">
+# wooly pools
+./bzminer -a warthog -r test -w 0000 -p stratum+tcp://pool.us.woolypooly.com:3140 --nc 1 --nvidia 1 --amd 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 0 --warthog_verus_hr_target 0
+
+# acc pool
+#./bzminer -a warthog -r test -w 0000 -p stratum+tcp://us.acc-pool.pw:12000 --nc 1 --nvidia 1 --amd 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 0 --warthog_verus_hr_target 0
+
+# solo, change 127.0.0.1 to ip node is running on, ensure to run node with `--stratum 0.0.0.0:3456`
+#./bzminer -a warthog -w 0000 -p stratum+tcp://127.0.0.1:3456 --nc 1 --amd 1 --nvidia 1 --intel 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 4
+	</pre>
+
+	<pre style="overflow: auto; max-height: 200px;">
+------------------------ warthog - stratum+tcp://us.acc-pool.pw:12000 - test ------------------------
+| #    | a/r/i/p | cfg | tbs | tsls | eff  | pool hr | janus hr | status                            |
+| 3:0  | -/-/-/- | i16 | --  | --   | 22hw | --      | 408h     | 166.7mh/8h                        |
+| 8:0  | -/-/-/- | i16 | --  | --   | --   | --      | 122h     | 56.2mh/2h                         |
+|      |         |     |     |      |      |         |          |                                   |
+| smry | -/-/-/- |     | --  | --   | 28hw | --      | 530h     | diff:       1.00gh                |
+|      |         |     |     |      |      |         |          | latency:    --                    |
+|      |         |     |     |      |      |         |          | est. tbs:   21.82d                |
+|      |         |     |     |      |      |         |          | threads:    9                     |
+|      |         |     |     |      |      |         |          | sha hr:     45h                   |
+|      |         |     |     |      |      |         |          | verus hr:   609.67kh              |
+|      |         |     |     |      |      |         |          | calibrating: 47%                  |
+04-04 21:48:29:0000 ------------------- uptime: 0d 0h 0m 15s ------------------------------ v21.0.3b7	
+	</pre>
+
+
+	<h3>Janusminer</h3>
+	<span>To start mine this coin you need to download janusminer <a href="https://github.com/CoinFuMasterShifu/janusminer/releases" target="_blank">here</a>. Current stable version is <a href="https://github.com/CoinFuMasterShifu/janusminer/releases/tag/0.2.9" target="_blank">0.2.9</a>. Now miner have <b>ONLY Linux</b> support with OpenCL API.</span>
 	<pre>
 ./janusminer -a %wallet% -h %host_ip% -p %node_port%
 
