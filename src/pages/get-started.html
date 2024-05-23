@@ -1,159 +1,89 @@
 <div data-block="get-started" hidden>
 <div class="content-block">
 	<div class="flex around desktop">
-		<h1>NODE</h1>
+		<h1>WALLETS</h1>
 		<h1>—</h1>
-		<h1>WALLET</h1>
+		<h1>NODE</h1>
 		<h1>—</h1>
 		<h1>MINING</h1>
 		<h1>—</h1>
-		<h1>POOL</h1>
+		<h1>BUYING</h1>
 	</div>
 	<h1 class="mobile">GET STARTED</h1>
+</div>
+<div class="content-block">
+	<h2>WALLETS</h2>
+	<p>To get started with Warthog network, you need first to create your wallet. You can currently choose between 3 wallet solutions. Each of them need an instance of the node, local or <a href="https://github.com/warthog-network/public-nodes">public</a></p>
+		<h3>1- wart dapp (GUI)</h3>
+		<p>WART DAPP is a GUI wallet working on Windows and Linux. It works with a node. You can connect it with one click to a public node, or manually type your node IP.</p>
+		<ul>
+		<li><a href="https://github.com/warthog-network/wart-dapp/releases">Download</a></li>
+		<li><a href="https://www.warthog.network/docs/guides/wart-dapp/">Guide</a></li>
+		</ul>
+		<h3>2- wart-wallet (GUI)</h3>
+		<p>WART WALLET is also GUI wallet working on Windows and Linux. It works with a node. You have to manually type your node IP (local or public)</p>
+		<ul>
+		<li><a href="https://github.com/warthog-network/wart-wallet/releases">Download</a></li>
+		<li><a href="https://github.com/warthog-network/wart-wallet/blob/master/README.md">Guide</a></li>
+		</ul>
+		<h2 id="3-wart-wallet-command-line-">3- wart-wallet (command-line)</h2>
+		<p>This is the original Warthog wallet, developped with the node and working on command-line.</p>
+		<ul>
+		<li><a href="https://github.com/warthog-network/Warthog/releases">Download</a></li>
+		<li><a href="https://www.warthog.network/docs/guides/wart-wallet/">Guide</a></li>
+		</ul>
+</div>
+<div class="content-block">
 	<h2>NODE</h2>
-	<span>At the moment, for any actions on the Warthog network, you need to run an instance of the node on your computer. Currently, the pre-compiled node executable file availabel for Windows, macOS (only arm), Linux (Ubuntu, Debian). You can download it from <a href="https://github.com/warthog-network/Warthog/releases" target="_blank">here</a>. Аfter launch, node will start synchronizing the blockchain, after it is completed, it will be possible to perform operations with the wallet and start mining.</span>
-	<pre>
-[info] Warthog Node v0.4.11 
-[info] Chain database: /home/user/.warthog/chain.db3
-[info] Peers database: /home/user/.warthog/peers.db3
-[info] 0 IPs are currently blacklisted.
-[info] Cache has 258 entries
-[info] Chain info: length 1065993, work 7.006105109451692e+18, 
-[info] Chain snapshot is valid: priority 0, height 1014260
-[info] P2P endpoint is 0.0.0.0:9186.
-[info] RPC endpoint is 127.0.0.1:3000.
-[info] Connected to 1 peers
-[info] Connected to 2 peers
-[info] Connected to 3 peers
-[info] Connected to 4 peers
-[info] Connected to 5 peers
-[info] Syncing... (height 0 of 1080000)
-    </pre>
+	<p>See here if you want to install your node on your computer (to support the blockchain decentralization, to use your wallet with a local node, or to mine solo for examples.</p>
+	<ul>
+	<li><a href="https://github.com/warthog-network/Warthog/releases">Download</a></li>
+	<li><a href="https://www.warthog.network/docs/guides/node/">Guide</a></li>
+	</ul>
 </div>
 <div class="content-block">
-	<h2>WALLET</h2>
-	<span>To use a wallet, you need to download pre-compiled wallet executable file from <a href="https://github.com/warthog-network/Warthog/releases" target="_blank">here</a>. Currently support Windows, macOS (only arm), Linux (Ubuntu, Debian), but you can compile </span>
-	<h3>Create wallet</h3>
-	<span>To create the wallet you need just run next command:</span>
-	<br>
-	<pre>
-./wart-wallet -c</pre>
-	<span>In output you get wallet address, private and public keys. This information will be saved to the wallet.json file. </span>
-	<pre>
-Wallet file created.
-{
-   "address": "5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64",
-   "privateKey": "2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a",
-   "publicKey": "0285a33afacea56262b44b8b96f4affa8f31cc51d3065eb37e43c0d0cf979a2872"
-}</pre>
-	<h3>Check balance</h3>
-	<span>If you want check your balance run command:</span>
-	<pre>
-./wart-wallet -b</pre>
-	<span>In output you get balance of your wallet</span>
-	<h3>Send coins</h3>
-	<span>To send some coins, use command:</span>
-	<pre>
-./wart-walet -s --to=%address% --amount %count% --fee 0</pre>
-	<pre>
-./wart-walet -s --to=9da0dc31d0c3bcaaeaf422be6499fbf451b314fa622be978 --amount 0.00000001 --fee 0</pre>
-	<span>Next, you will be shown the details of the transaction and if you agree with them, you need to confirm it</span>
-	<pre>
-Summary:
-   To:     9da0dc31d0c3bcaaeaf422be6499fbf451b314fa622be978
-   Fee:    0.00000001
-   Amount: 0.00000001
-   Nonce: 4262777042
-Confirm with "y": y</pre>
-	<span>And your transaction added to blockchain</span>
-	<pre>
-Get pin
-Got pin
-NonceId: 4262777042
-pinHeight: 896450
-pinHeight: 896450
-pinHash: 2452592e211a10b97da31e4b681aafe49b93321776580278b0c39fc5bae84558
-=====DEBUG INFO TRANSACTION JSON=====
-{
-   "amount": "0.00000001",
-   "fee": "0.00000001",
-   "nonceId": 4262777042,
-   "pinHeight": 896450,
-   "signature65": "53d429fa34ef05f9f413b4eb57...9c189ae3078894cb01aee91eda2201",
-   "toAddr": "9929fdce19b2a71cf0950263baa71478ef1980f8c7d9ccb3"
-}
-=====================================
-Transaction accepted.</pre>
-	<h3>Restore</h3>
-	<span>To restore your wallet.json file, you need run command:</span>
-	<pre>
-./wart-wallet -r %your private key%</pre>
-	<span>In output you get wallet address, private and public keys and </span>
-	<pre>
-./wart-wallet -r 2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a
-Wallet file created.
-{
-   "address": "5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64",
-   "privateKey": "2cc2cbe28cb665d540c949aef5d1a3484a960740338780ec82a9ae1414bcc18a",
-   "publicKey": "0285a33afacea56262b44b8b96f4affa8f31cc51d3065eb37e43c0d0cf979a2872"
-}</pre>
+	<h2>MINING</h2>
+	<p>Once you have created your wallet. You can start mining Warthog. Either solo on your own node, or on a pool. Mining Warthog through the Proof of Balanced Work algo (called Janushash) will use your CPU and GPU at the same time on your worker.</p>
+		<h3>1- MINING GUIDE</h3>
+		<p>See this guide to start mining now :</p>
+		<ul>
+		<li><a href="https://www.warthog.network/docs/guides/mining-quickstart/">English</a></li>
+		<li><a href="https://www.warthog.network/docs/guides/mining-quickstart_fr/">French</a></li>
+		</ul>
+		<h3>2- POOLS</h3>
+		<p>See here for a list of pools :</p>
+		<ul>
+		<li><a href="https://miningpoolstats.stream/warthog">Miningpoolstats</a></li>
+		<li><a href="https://www.warthog.network/docs/links/#pools">Docs</a></li>
+		</ul>
 </div>
 <div class="content-block">
-	<h2>MINER</h2>
-	<h3>Bzminer</h3>
-	<span>  BZ miner is the first professional miner that supports mining on the Warthog Network chain. Support for Warthog was added in version 21.0.3. It supports Nvidia, Amd and Intel GPUs and Intel as well as AMD processors (desktop and server platforms). Mining either to pool or solo to node in stratum mode. Available in all major mining OSes as well as various systems executable available <a href="https://www.bzminer.com/">here</a> </span>
-
-	<pre style="overflow: auto; max-height: 200px;">
-# wooly pools
-./bzminer -a warthog -r test -w 0000 -p stratum+tcp://pool.us.woolypooly.com:3140 --nc 1 --nvidia 1 --amd 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 0 --warthog_verus_hr_target 0
-
-# acc pool
-#./bzminer -a warthog -r test -w 0000 -p stratum+tcp://us.acc-pool.pw:12000 --nc 1 --nvidia 1 --amd 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 0 --warthog_verus_hr_target 0
-
-# solo, change 127.0.0.1 to ip node is running on, ensure to run node with `--stratum 0.0.0.0:3456`
-#./bzminer -a warthog -w 0000 -p stratum+tcp://127.0.0.1:3456 --nc 1 --amd 1 --nvidia 1 --intel 1 --warthog_cpu_threads 0 --warthog_max_ram_gb 4
-	</pre>
-
-	<pre style="overflow: auto; max-height: 200px;">
------------------------- warthog - stratum+tcp://us.acc-pool.pw:12000 - test ------------------------
-| #    | a/r/i/p | cfg | tbs | tsls | eff  | pool hr | janus hr | status                            |
-| 3:0  | -/-/-/- | i16 | --  | --   | 22hw | --      | 408h     | 166.7mh/8h                        |
-| 8:0  | -/-/-/- | i16 | --  | --   | --   | --      | 122h     | 56.2mh/2h                         |
-|      |         |     |     |      |      |         |          |                                   |
-| smry | -/-/-/- |     | --  | --   | 28hw | --      | 530h     | diff:       1.00gh                |
-|      |         |     |     |      |      |         |          | latency:    --                    |
-|      |         |     |     |      |      |         |          | est. tbs:   21.82d                |
-|      |         |     |     |      |      |         |          | threads:    9                     |
-|      |         |     |     |      |      |         |          | sha hr:     45h                   |
-|      |         |     |     |      |      |         |          | verus hr:   609.67kh              |
-|      |         |     |     |      |      |         |          | calibrating: 47%                  |
-04-04 21:48:29:0000 ------------------- uptime: 0d 0h 0m 15s ------------------------------ v21.0.3b7	
-	</pre>
-
-
-	<h3>Janusminer</h3>
-	<span>To start mine this coin you need to download janusminer <a href="https://github.com/CoinFuMasterShifu/janusminer/releases" target="_blank">here</a>. Current stable version is <a href="https://github.com/CoinFuMasterShifu/janusminer/releases/tag/0.2.9" target="_blank">0.2.9</a>. Now miner have <b>ONLY Linux</b> support with OpenCL API.</span>
-	<pre>
-./janusminer -a %wallet% -h %host_ip% -p %node_port%
-
-./janusminer -a 5fe016f874698e11f36a2b2f4dd759d53b55d5520c255e64 -h 192.168.1.1 -p 3000
-Janushash Miner (By CoinFuMasterShifu) ⚒ ⛏
-[info] Node RPC is 192.168.1.1:3000
-OpenCL installations for the following GPUs were detected:
-[0]: NVIDIA GeForce RTX 4070
-Using all GPUs.
-Using 16 CPU threads for Verushash
-[warning] CPU queue drained
-[info] Total hashrate (GPU): 203.929200 mh/s
-[info]    NVIDIA GeForce RTX 4070: 203.929200 mh/s
-[info] Total hashrate (CPU): 16.734208 mh/s
-[info]    Thread#0: 940.485000 kh/s
-...
-[info]    Thread#15: 861.117000 kh/s
-[info] Janusscore: 72.634461 mh/s</pre>
-</div>
-<div class="content-block">
-	<h2>POOL</h2>
-	<span>See <a href="https://www.warthog.network/docs/links/#pools" target="_blank">here</a> for a list of pools</span>
+	<h2>BUYING</h2>
+	<div class="main-page__list-buy-pleaces">
+		<!-- <div> -->
+			<a href="https://exbitron.com/trade?market=wart-usdt" target="_blank">
+				<img src="/img/exibitron.png">
+				<span>Exbitron Exchange</span>
+			</a>
+			<a href="https://xeggex.com/market/WART_USDT" target="_blank">
+				<img src="/img/xeggex.png">
+				<span>Xeggex Exchange</span>
+			</a>
+			<a href="https://tradeogre.com/exchange/WART-USDT" target="_blank">
+				<img src="/img/tradeogre.png">
+				<span>TradeOgre Exchange</span>
+			</a>
+		<!-- </div> -->
+		<!-- <div> -->
+			<a href="https://discord.com/channels/1126486458698584107/1205481571109445633" target="_blank">
+				<img src="/img/caldera.png">
+				<span>Discord Caldera Bot</span>
+			</a>
+			<a href="https://discord.com/channels/1126486458698584107/1133081739816861716" target="_blank">
+				<img src="/img/discord.png">
+				<span>Discord P2P thread</span>
+			</a>
+		<!-- </div> -->
+	</div>
 </div>
 </div>
