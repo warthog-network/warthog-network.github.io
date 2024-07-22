@@ -20,7 +20,7 @@ function OffcanvasExample() {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header className='ocheader'  closeButton>
+              <Offcanvas.Header  className='ocheader'  closeButton>
               <a href="/"><img  className="logo" src={logo} alt=""/></a>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 

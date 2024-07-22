@@ -5,6 +5,9 @@
   background-color: rgb(241, 241, 241);
  
 }
+.ocheader{
+  background-color: black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
