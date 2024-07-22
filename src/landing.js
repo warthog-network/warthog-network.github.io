@@ -14,7 +14,7 @@ const Landing = () => (
 
 
 
-        <Container style={{ display: '', justifyContent: 'center' }}>
+        <Container >
             <Row><Col>
                 <Nav.Link className="logohome " as={Link} to={"./Contact"}>
                     <img className='logohome' src={wartcoin} alt="" /><br />
@@ -23,7 +23,7 @@ const Landing = () => (
 
             </Col>
                 <Col>
-                    <h1>WARTHOG NETWORK</h1>
+                    <h1>WARTHOG NETWORK!</h1>
                     <h2>Rethinking the blockchain</h2>
 
                     <p className='paragraph'> Warthog network strives to be the most innovative and technological state of the art blockchain in the world. Our mission is to cross-breed innovative approaches into blockchain technology to defend decentralization and bring easy-to-use decentralized finance to the masses.
