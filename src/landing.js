@@ -16,7 +16,7 @@ const Landing = () => (
 
         <Container >
             <Row><Col>
-                <Nav.Link className="logohome " as={Link} to={"./Contact"}>
+                <Nav.Link className="logohome " as={Link} to={"./getstarted"}>
                     <img className='logohome' src={wartcoin} alt="" /><br />
                     <h1 className="logohome1 logo1left" >Get Started</h1>
                 </Nav.Link>
