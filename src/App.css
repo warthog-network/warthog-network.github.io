@@ -8,6 +8,20 @@
 .ocheader{
   background-color: black;
 }
+.mnemonicpage{
+  text-align: center;
+  width: 350px;
+  height: 600px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(241, 241, 241);
+}
+.seedphrasecard{
+  max-width: 20rem;
+  min-width: 17rem;
+}
 .Wbutton {
   min-height: 1.5rem;
   min-width: 4rem;
@@ -26,6 +40,14 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.mnemonic{
+ 
+  margin: 5px;
+  padding: .3rem;
+  max-width: 17rem;
+  border-radius: .3rem;
+  border-style: solid;
 }
 .logo{
   height: 5rem;

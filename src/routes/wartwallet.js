@@ -2,14 +2,14 @@ import '../App.css';
 import { useState } from 'react';
 import logo from '../wartlogo.png';
 
-const getnewaddress = async () =>{
+import { useNavigate } from 'react-router-dom';
 
-}
 
 
 const Wartwallet =()=>{
-const [selectedChain, setSelectedChain] = useState('warthog');
 
+const [selectedChain, setSelectedChain] = useState('warthog');
+const navigate=useNavigate();
 
     return(
         <div className="wartwallet">
@@ -26,9 +26,12 @@ const [selectedChain, setSelectedChain] = useState('warthog');
                   
                 </select>
                 <br/>
-        <button className="Wbutton" onClick={getnewaddress()}> get new address</button>
+                <h2>wallet home</h2>
+                <p>welcome to your warthog wallet</p>
+                <br/>
+        <button onClick={()=>navigate('yourwartwallet')}> get new address</button>
         <br/>
-        <button className="Wbutton" onClick={getnewaddress()}>import from seed phrase</button>
+        <button className="Wbutton" onClick={()=>navigate('recoverwartwallet')}>import from seed phrase</button>
         </>
         </div>
     )

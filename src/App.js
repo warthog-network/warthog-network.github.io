@@ -7,6 +7,9 @@ import Landing from "./landing";
 import Wartwallet from "./routes/wartwallet";
 import News from "./routes/news";
 import Getstarted from "./routes/getstarted";
+import Createaccount from './routes/createaccount';
+import Recoveraccount from './routes/recoveraccount';
+
 function App() {
   const rootElement = document.getElementById("root");
   render(
@@ -17,6 +20,9 @@ function App() {
         <Route path="/getstarted" element={<Getstarted />}  />
         <Route path="/news" element={<News />}  />
         <Route path="/wartwallet" element={<Wartwallet />}  />
+        <Route path="/wartwallet/yourwartwallet" element={<Createaccount /*setSeedPhrase={setSeedPhrase} setWallet={setWallet}*//>}  />
+        <Route path="/wartwallet/recoverwartwallet" element={<Recoveraccount />}  />
+      
       
    
         </Route>
