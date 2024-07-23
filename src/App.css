@@ -8,6 +8,21 @@
 .ocheader{
   background-color: black;
 }
+.Wbutton {
+  min-height: 1.5rem;
+  min-width: 4rem;
+  border-radius: .3rem;
+}
+.wartwallet{
+  text-align: center;
+  width: 350px;
+  height: 600px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(241, 241, 241);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
