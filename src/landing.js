@@ -2,12 +2,17 @@ import { Nav, Container, Row, Col } from 'react-bootstrap';
 import OffcanvasExample from './navbar';
 import './App.css';
 import { Link } from 'react-router-dom';
+import greenlight from './greenlight.png'
 
 import wartcoin from './soldierwart.webp';
 import tokengraph from './tokenomics.png';
-
+import sandwich from './sandwichproblem.webp';
+import { BiSolidChevronsDown } from "react-icons/bi";
 
 const Landing = () => (
+
+    
+
     <div className='backdrop' >
 
         <OffcanvasExample />
@@ -16,52 +21,71 @@ const Landing = () => (
 
         <Container >
             <Row><Col>
-                <Nav.Link className="logohome " as={Link} to={"./getstarted"}>
-                    <img className='logohome' src={wartcoin} alt="" /><br />
-                    <h1 className="logohome1 logo1left" >Get Started</h1>
-                </Nav.Link>
-
+             <img className='logohome' src={tokengraph} alt="" /><h1>Tokenomics</h1><p className='paragraph'>  100% is publicly mineable. 0% is minted, premined, reserved for anyone.
+            </p>
+               <br/><br/><br/>
+               <img className='logohome' src={wartcoin} alt="" /><br />
+            
+               
+               
             </Col>
                 <Col>
-                    <h1>WARTHOG NETWORK!</h1>
-                    <h2>Rethinking the blockchain</h2>
-
+                    <h1>WARTHOG NETWORK</h1><br />
+                    <h2>-Rethinking the blockchain-</h2><br/>
+                        <p className='paragraph'><strong>"Warthog’s decentralized network empowers individuals with fair, balanced, and synergized CPU/GPU work. It secures hardcoded DeFi and token technologies, eliminating the risks of smart contracts. Our goal is a safer, more efficient blockchain, aligned with the original vision of cryptocurrency: "one CPU, one vote."</strong></p>
                     <p className='paragraph'> Warthog network strives to be the most innovative and technological state of the art blockchain in the world. Our mission is to cross-breed innovative approaches into blockchain technology to defend decentralization and bring easy-to-use decentralized finance to the masses.
                         We are a relatively young project with the ambitious goals to revolutionize the crypto space by aggressively implementing<strong> features that no other blockchain project can offer</strong>: fast and resource-friendly sync by using a thread-based sync model, the world's first Proof of Balanced Work mining algorithm which favors decentralization, nodes which can run and save the chain directly in your browser, and soon also peer to peer communication between browser nodes.
-                    </p><p className='paragraph'>
-                        But there is more: We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.
+                    </p>
+                    <p className='paragraph'>
+                       <h2> But there is more</h2><p> We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
                     </p>
                 </Col>
             </Row>
 
 
             <Row><Col>
-                <Nav.Link className="logohome " as={Link} to={"./news"}>
-                    <img className='logohome' src={tokengraph} alt="" />
-                    <h1 className="logohome1 logo1left" >NEWS</h1>
-                </Nav.Link>
+                
 
             </Col>
-                <Col><h1>Tokenomics</h1><p className='paragraph'> This is not the default kind of project where you see a disproportionately high allocation of the total supply unfairly reserved for the team, the advisors and their pockets. 0% is minted, premined, reserved for anyone, 100% is publicly mineable.
-                </p></Col></Row>
-            <br /><br />
-            <Row ><h1 style={{ display: 'flex', justifyContent: 'center' }}>KEY FACTS</h1>
-                <Col >
-                    <p className='keyfacts'><h2>no premine<span class="text-icon">👍</span></h2>Project was fairly launched on Bitcointalk</p>
-
-                    <p className='keyfacts'><h2>Written from scratch<span class="text-icon">👑</span></h2>Project was fairly launched on Bitcointalk</p>
-                </Col>
                 <Col>
-                    <p className='keyfacts'><h2>no "Team/Dev" fund<span class="text-icon">🤟</span></h2>No unfair allocation to anybody aka "team"/"development" funds</p>
-
-                    <p className='keyfacts'><h2>100% mineable<span class="text-icon">😊</span></h2>100% of supply is publicly mineable, no coins were minted</p>
-                </Col>
-                <Col>
-                    <p className='keyfacts'><h2>Modern Codebase<span class="text-icon">✨</span></h2>No unfair allocation to anybody aka "team"/"development" funds</p>
-
-                    <p className='keyfacts'><h2>Open Source<span class="text-icon">🫵</span></h2>100% of supply is publicly mineable, no coins were minted</p>
-
+               
                 </Col></Row>
+            <br /><br />
+            <Row >
+                
+                <h1 style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                     <img className='glamoricons' src={greenlight} alt=''></img>
+                     KEY FACTS   
+                     <img className='glamoricons' src={greenlight} alt=''></img>
+                     
+                </h1>
+                <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                <BiSolidChevronsDown />
+                <BiSolidChevronsDown />
+                </div>
+                <p className='paragraph'>Remember the time when crypto was<strong> interesting and fun</strong>? We want to bring this golden age of crypto <strong>back to life</strong></p>
+              
+                <Row>
+               
+                <Col >
+                
+                   <h2 className='keyheaders'>no premine</h2> <p className='keyfacts'>Project was fairly launched on Bitcointalk</p>
+
+                    <h2 className='keyheaders'>Written from scratch</h2><p className='keyfacts'>This project is NOT a fork/copy of anything else</p>
+                </Col>
+                <Col>
+                   <h2 className='keyheaders'>no "Team/Dev" fund</h2> <p className='keyfacts'>No unfair allocation to anybody aka "team"/"development" funds</p>
+
+                    <h2 className='keyheaders'>100% mineable</h2><p className='keyfacts'>100% of supply is publicly mineable, no coins were minted</p>
+                </Col>
+                <Col>
+                    <h2 className='keyheaders'>Modern Codebase</h2><p className='keyfacts'>No unfair allocation to anybody aka "team"/"development" funds</p>
+
+                    <h2 className='keyheaders'>Open Source</h2><p className='keyfacts'>100% of supply is publicly mineable, no coins were minted</p>
+
+                </Col>
+                </Row>
+                </Row>
 
             <Row><h1 style={{ display: 'flex', justifyContent: 'center' }}>REVOLUTIONARY FEATURES</h1>
                 <p className='paragraph'>Warthog is a pioneer pushing the boundaries of blockchain technology. The following features are exclusive to Warthog.</p>

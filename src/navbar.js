@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import logo from './navlogo.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { Link } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function OffcanvasExample() {
@@ -10,7 +10,7 @@ function OffcanvasExample() {
     <div> 
         
       { [false].map((expand) => (
-        <Navbar key={expand} collapse="sm" bg="dark" expand={expand} className="mb-3 ">
+        <Navbar key={expand} collapse="sm" bg="black" expand={expand} className="mb-3 ">
             
           <Container  fluid>
             <Navbar.Brand  href="/"><img className="logo" src={logo}  alt=""/></Navbar.Brand>
