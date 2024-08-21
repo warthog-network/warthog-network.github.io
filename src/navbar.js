@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import logo from './navlogo.png';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function OffcanvasExample() {
@@ -27,7 +27,7 @@ function OffcanvasExample() {
                 </Offcanvas.Title>
                 
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body className='backgroundimage'>
               <p>Rethinking the blockchain:</p>
                 <Nav className="justify-content-end flex-grow-1 pe-3 ">
                   <Nav.Link href="/getstarted">GET STARTED</Nav.Link>

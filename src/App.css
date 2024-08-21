@@ -2,8 +2,17 @@
 .backdrop{
   justify-content: center;
   align-items: center;
-  background-color: rgb(212, 205, 205);
+  background-color: rgb(243, 237, 237);
  
+
+}
+.contributors{
+  max-width: 35rem;
+}
+.bio{
+  max-width: 40rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
 }
 .ocheader{
   background-color: black;
@@ -35,19 +44,37 @@
   min-width: 4rem;
   border-radius: .3rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Keyfacts{
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: .5rem;
 }
-
+.App-logo {
+  border-width: .1rem;
+  border-style: solid;
+  border-radius: .5rem;
+  float: right;
+  max-width: 100%;
+object-fit: scale-down;
+padding: .5rem;
+background-image: url("jungle.jpg");
+background-color: rgba(255, 255, 255, 0.774);
+background-blend-mode: lighten;
+}
+.backgroundimage{
+  background-color: rgba(255, 255, 255, 0.774);
+  background-blend-mode: lighten;
+  color: #000000;
+  background-image: url("jungle.jpg");
+}
 .logo{
   height: 5rem;
   
 }
 .glamoricons{
+ 
   object-fit: contain;
-height: 5rem;
+height: 4rem;
 }
 
 /*{
@@ -86,10 +113,10 @@ height: 5rem;
   .keyheaders{
     
     transition-duration: 1s;
-    text-shadow: 1px 1px 2px olivedrab, 0 0 1em green, 0 0 0.2em rgb(165, 226, 115);
-    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px  rgb(201, 231, 141), 0 0 1em rgb(2, 77, 2), 0 0 0.2em rgb(25, 26, 24);
+    font-size: 1.7rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: darkolivegreen;
+  color: rgb(31, 32, 29);
   }
  
 .REVOLUTIONARY{ 
@@ -105,7 +132,7 @@ height: 5rem;
 h2{
   
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 1rem;
+  border-radius: .3rem;
  
 }
 .logohome1{
@@ -129,12 +156,23 @@ h2{
   transition: transform 0.3s ease;
   transform-origin: 0% 100%;
 }
-.logohome{
+.logotoken{
   width: 18rem;
   border-radius: 4rem;
-
+  float: right;
+  padding: .5rem;
 }
-
+.chainspec{
+  
+  font-size: 1rem;
+}
+.logohome{
+  
+  width: 20rem;
+  border-radius: 4rem;
+  float: left;
+  padding: .5rem;
+}
 .logo1left:hover::after{
  transform: scale(1,1);
 }
