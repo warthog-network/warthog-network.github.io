@@ -62,7 +62,7 @@ const Landing = () => (
                 <Col>
                
                 </Col></Row>
-            <br /><br />
+            
             <Row >
                 
                 <h1 className='Keyfacts'  style={{ display: 'flex', justifyContent: 'center' }}>

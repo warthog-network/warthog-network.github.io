@@ -45,9 +45,9 @@
   border-radius: .3rem;
 }
 .Keyfacts{
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: .5rem;
+  padding: 1rem;
 }
 .App-logo {
   border-width: .1rem;
@@ -77,10 +77,10 @@ background-blend-mode: lighten;
 height: 4rem;
 }
 
-/*{
+*{
   outline: 1px solid red;
  }
-.ocheader{
+ /*.ocheader{
   background-color: #282c34;
 }
 */
@@ -136,7 +136,7 @@ h2{
  
 }
 .logohome1{
-  width: 15rem;
+  max-width: 15rem;
   border-radius: 4rem;
   position: relative;
  
@@ -157,7 +157,7 @@ h2{
   transform-origin: 0% 100%;
 }
 .logotoken{
-  width: 18rem;
+  max-width: 18rem;
   border-radius: 4rem;
   float: right;
   padding: .5rem;
@@ -168,7 +168,7 @@ h2{
 }
 .logohome{
   
-  width: 20rem;
+  max-width: 20rem;
   border-radius: 4rem;
   float: left;
   padding: .5rem;
