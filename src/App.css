@@ -77,10 +77,10 @@ background-blend-mode: lighten;
 height: 4rem;
 }
 
-*{
+ /**{
   outline: 1px solid red;
  }
- /*.ocheader{
+.ocheader{
   background-color: #282c34;
 }
 */
