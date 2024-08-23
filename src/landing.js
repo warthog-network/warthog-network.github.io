@@ -6,6 +6,7 @@ import { TbBrowserCheck } from "react-icons/tb";
 import wartcoin from './soldierwart.webp';
 import tokengraph from './tokenomics.png';
 import sandwich from './sandwich.webp';
+import sandwiches from './sandwichproblem.webp';
 import { BiSolidChevronsDown } from "react-icons/bi";
 
 const Landing = () => (
@@ -52,11 +53,18 @@ const Landing = () => (
                     </Row>
                 </Col>
                 <Row>
-                    <p className='paragraph'>
+                <p className='paragraph'>
 
-                        <h2 className='backgroundimage'> But there is more</h2><p> <img className='App-logo-sandwich' src={sandwich} alt=''></img>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
+<h2 className='backgroundimage'> But there is more</h2><p>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
 
-                    </p>
+</p>
+                    <Col>
+                    <img className='App-logo-sandwich' src={sandwich} alt=''></img> 
+                    </Col>
+                    <Col>
+                    <img className='App-logo-sandwiches' src={sandwiches} alt=''></img>
+                    </Col>
+                 
 
                 </Row>
             </Row>
