@@ -5,7 +5,7 @@ import { TbBrowserCheck } from "react-icons/tb";
 
 import wartcoin from './soldierwart.webp';
 import tokengraph from './tokenomics.png';
-import sandwich from './sandwichproblem.webp';
+import sandwich from './sandwich.webp';
 import { BiSolidChevronsDown } from "react-icons/bi";
 
 const Landing = () => (
@@ -23,8 +23,8 @@ const Landing = () => (
                 <h1 className='Keyfacts '>WARTHOG NETWORK</h1><br />
                 <h2 className='backgroundimage keyheaders'>-Rethinking the blockchain-</h2><br />
                 <p className='paragraph'><strong>"Warthog’s decentralized network empowers individuals with fair, balanced, and synergized CPU/GPU work. It secures hardcoded DeFi and token technologies, eliminating the risks of smart contracts. Our goal is a safer, more efficient blockchain, aligned with the original vision of cryptocurrency: "one CPU, one vote."</strong></p>
-                <p className='paragraph'> Warthog network strives to be the most innovative and technological state of the art blockchain in the world. Our mission is to cross-breed innovative approaches into blockchain technology to defend decentralization and bring easy-to-use decentralized finance to the masses.
-                    We are a relatively young project with the ambitious goals to revolutionize the crypto space by aggressively implementing<strong> features that no other blockchain project can offer</strong>: fast and resource-friendly sync by using a thread-based sync model, the world's first Proof of Balanced Work mining algorithm which favors decentralization, nodes which can run and save the chain directly in your browser, and soon also peer to peer communication between browser nodes.
+                <p className='paragraph'>Our mission is to cross-breed innovative approaches into blockchain technology to defend decentralization and bring easy-to-use decentralized finance to the masses.
+                    We are a relatively young project with the ambitious goals to revolutionize the crypto space by aggressively implementing<strong> features that no other blockchain project can offer</strong>: fast and resource-friendly sync by using a thread-based sync model, the world's first Proof of Balanced Work mining algorithm which favors decentralization, nodes which can run directly in your browser, and soon also peer to peer communication between browser nodes.
                 </p>
             </Col>
                 <Col >
@@ -54,7 +54,7 @@ const Landing = () => (
                 <Row>
                     <p className='paragraph'>
 
-                        <h2 className='backgroundimage'> But there is more</h2><p> <img className='App-logo' src={sandwich} alt=''></img>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
+                        <h2 className='backgroundimage'> But there is more</h2><p> <img className='App-logo-sandwich' src={sandwich} alt=''></img>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
 
                     </p>
 

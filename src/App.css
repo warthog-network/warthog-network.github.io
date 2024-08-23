@@ -73,6 +73,18 @@
   
   padding: 1rem;
 }
+.App-logo-sandwich {
+  border-width: .1rem;
+  border-style: solid;
+  border-radius: .5rem;
+  float: right;
+  max-width: 100%;
+object-fit: scale-down;
+padding: .5rem;
+background-image: url("jungle.jpg");
+background-color: rgba(255, 255, 255, 0.774);
+background-blend-mode: lighten;
+}
 .App-logo {
   border-width: .1rem;
   border-style: solid;
