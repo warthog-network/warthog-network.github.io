@@ -187,8 +187,8 @@ h2{
   padding: .5rem;
 }
 .chainspec{
-   
-  padding: .5rem;
+  display: block;
+  padding: 1.2rem;
   font-size: 1rem;
 }
 .logohome{
