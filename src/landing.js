@@ -58,15 +58,17 @@ const Landing = () => (
 <h2 className='backgroundimage'> But there is more</h2><p>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
 
 </p>
+
+</Row>
+<Row>
                     <Col>
                     <img className='App-logo-sandwich' src={sandwich} alt=''></img> 
                     </Col>
                     <Col>
                     <img className='App-logo-sandwiches' src={sandwiches} alt=''></img>
                     </Col>
-                 
+                    </Row>            
 
-                </Row>
             </Row>
 
 
