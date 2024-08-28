@@ -8,7 +8,9 @@ import Landing from "./landing";
 
 import News from "./routes/news";
 import Getstarted from "./routes/getstarted";
-
+import Whitepaper from './routes/whitepaper';
+import Algorithim from './routes/algorithim';
+import FAQs from './routes/FAQs';
 function App() {
   
   const rootElement = document.getElementById("root");
@@ -22,7 +24,11 @@ function App() {
         <Route path="/" element={<Landing />}  />
         <Route path="/getstarted" element={<Getstarted />}  />
         <Route path="/news" element={<News />}  />
+        <Route path="/algorithim" element={<Algorithim />}  />
+        <Route path="/whitepaper" element={<Whitepaper />}  />
+        <Route path="/faq" element={<FAQs />}  />
       
+   
    
         </Route>
       </Routes>

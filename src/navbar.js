@@ -30,10 +30,13 @@ function OffcanvasExample() {
               <Offcanvas.Body className='backgroundimage'>
               <p>Rethinking the blockchain:</p>
                 <Nav className="justify-content-end flex-grow-1 pe-3 ">
-                  <Nav.Link href="/getstarted">GET STARTED</Nav.Link>
-                  <Nav.Link href="/news">NEWS</Nav.Link>
-                  <Nav.Link href="/wartwallet">wallet</Nav.Link>
-                  
+                  <Nav.Link href="/getstarted"><h3  className="logohome2 logo1left">GET STARTED</h3></Nav.Link>
+                  <Nav.Link href="/news"><h3  className="logohome2 logo1left">NEWS</h3></Nav.Link>
+                  <Nav.Link href="/algorithim"><h3  className="logohome2 logo1left">ALGORITHIM</h3></Nav.Link>
+                  <Nav.Link href="/whitepaper"><h3  className="logohome2 logo1left">WHITEPAPER</h3></Nav.Link>
+                  <Nav.Link href="/faq"><h3  className="logohome2 logo1left">FAQs</h3></Nav.Link>
+                  <Nav.Link href="https://wartscan.io/"><h3  className="logohome2 logo1left">EXPLORER</h3></Nav.Link>
+                  <Nav.Link href="https://www.warthog.network/docs/"><h3  className="logohome2 logo1left">DOCS</h3></Nav.Link>
                 </Nav>
                
               </Offcanvas.Body>

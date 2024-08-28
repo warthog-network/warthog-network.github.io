@@ -2,24 +2,48 @@ import { Container, Row, Col } from 'react-bootstrap';
 import OffcanvasExample from './navbar';
 import './App.css';
 import { TbBrowserCheck } from "react-icons/tb";
-
+import { useState,useEffect } from 'react';
 import wartcoin from './soldierwart.webp';
 import tokengraph from './tokenomics.png';
 import sandwich from './sandwich.webp';
 import sandwiches from './sandwichproblem.webp';
 import { BiSolidChevronsDown } from "react-icons/bi";
+import Navbar2 from './navbar2';
+import exibitron from './img/exibitron.png'
+import tradeogre from './img/tradeogre.png'
+import xeggex from './img/xeggex.png'
+import caldera from './img/caldera.png'
 
-const Landing = () => (
+import discord from './img/discord.png'
+const Landing = () => {
+    const [windowDim, setWindowDim] = useState  ({
+        winWidth:window.innerWidth,
+        
+        });
+        
+        const detectSize = () =>{
+            setWindowDim({
+                winWidth:window.innerWidth,
+            })
+        }
+        
+        useEffect(()=>{
+        window.addEventListener('resize', detectSize)
+        
+        return()=>{
+            window.removeEventListener('resize', detectSize)
+        }
+        },[windowDim])
+    return(
 
 
 
     <div className='backdrop' >
-
-        <OffcanvasExample />
-
-
-
-        <Container className='font-mono'>
+{ (windowDim.winWidth>1000) 
+? <Navbar2/> 
+ :   <OffcanvasExample />
+}
+        <Container className='landCont font-mono'>
             <Row><Col>
                 <h1 className='Keyfacts '>WARTHOG NETWORK</h1><br />
                 <h2 className='backgroundimage keyheaders'>-Rethinking the blockchain-</h2><br />
@@ -207,11 +231,30 @@ const Landing = () => (
                 </Col>
             </Row>
 
-
+            <h1 className='textunderline'>WHERE TO BUY</h1>
+                <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+                    <Row>
+                        <Col>
+                           <a href='https://exbitron.com/trade?market=wart-usdt'> <button  className='xButton'><img className='exchangeButton' src={exibitron} alt=''></img><p className='xtext'>exibitron</p></button></a>
+                        </Col>
+                        <Col>
+                           <a href='https://xeggex.com/market/WART_USDT'> <button className='xButton'><img className='exchangeButton' src={xeggex} alt=''></img><p className='xtext'>xeggex</p></button> </a>
+                        </Col>
+                        <Col>
+                        <a href='https://tradeogre.com/exchange/WART-USDT'> <button className='xButton'><img className='exchangeButton' src={tradeogre} alt=''></img><p className='xtext'>tradeogre</p></button></a>
+                        </Col>
+                        <Col>
+                        <a href='https://discord.com/channels/1126486458698584107/1205481571109445633'>  <button className='xButton'><img className='exchangeButton' src={caldera} alt=''></img><p className='xtext'>caldera</p></button></a>
+                        </Col>
+                        <Col>
+                        <a href='https://discord.com/channels/1126486458698584107/1133081739816861716'>  <button  className='xButton'><img className='exchangeButton' src={discord} alt=''></img><p className='xtext'>discord</p></button></a>
+                        </Col>
+                    </Row>
+                </div>
 
         </Container>
 
     </div>
-);
+)};
 
 export default Landing;

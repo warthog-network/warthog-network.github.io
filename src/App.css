@@ -3,8 +3,36 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(243, 237, 237);
- 
+}
+.outline{
+  border-style: solid;
+padding: 1rem;
+}
+.textunderline{
+  text-decoration: underline;
+}
+p{font-size: 1.1rem;
+margin-top: 2rem;}
+th{
+  padding: .5rem;
+}
+td {
+  padding: .5rem;
+  outline:.5px solid black;
+}
+.pobw{
+  margin-top: 1rem;
+max-width: 100%;
+  object-fit: scale-down;
+}
 
+
+.App{
+
+  padding: 1rem;
+}
+.newsApp{
+  background-color: rgb(243, 237, 237);
 }
 .contributors{
   
@@ -64,6 +92,13 @@
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.Brand{
+  padding-left: 1rem;
+}
+.NavSocials{
+  display: flex;
+  justify-content: space-evenly;
+}
 .roadmap{
   padding: 1rem;
 }
@@ -122,9 +157,10 @@ background-blend-mode: lighten;
   background-image: url("jungle.jpg");
 }
 .logo{
-  height: 5rem;
+  height: 4.5rem;
   
 }
+logohome1
 .glamoricons{
  
   object-fit: contain;
@@ -138,8 +174,18 @@ height: 4rem;
   background-color: #282c34;
 }
 */
-
-
+.xtext{
+  color: yellow;
+}
+.xButton{
+  background-color: #000000;
+  margin-top: .5rem;
+}
+.exchangeButton{
+  max-width: 10rem;
+  padding: .5rem;
+  object-fit: scale-down;
+}
 
 .paragraph{
   
@@ -148,6 +194,32 @@ height: 4rem;
   min-width: 15rem;
   max-width: 35rem;
   border-radius: .5rem;
+}
+
+
+.paragetstart{
+  
+  padding: .5rem;
+  font-size: larger;
+  min-width: 15rem;
+  max-width: 55rem;
+  border-radius: .5rem;
+}
+.paranews{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+  font-size: x-large;
+  min-width: 15rem;
+ 
+  border-radius: .5rem;
+}
+.center{
+  display: flex;
+flex-direction: column;
+
+  align-items: center;
 }
 
 
@@ -172,7 +244,9 @@ height: 4rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(31, 32, 29);
   }
- 
+ .landCont{
+  padding: 1rem;
+ }
 .REVOLUTIONARY{ 
   border-style: solid;
   border-width: .1rem;
@@ -187,28 +261,67 @@ h2{
   
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: .3rem;
- 
+ padding: 1rem;
+}
+.shadow{
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
 }
 .logohome1{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 20rem;
+  border-radius: 4rem;
+  position: relative;
+ color: rgb(204, 174, 6);
+ font-size: medium;
+}
+.logohome2{  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   max-width: 20rem;
   border-radius: 4rem;
   position: relative;
  
+
+}
+.logohome2:after {
+  
+  content: '';
+ position: absolute;
+ width: 100%;
+ height: 0.01rem;
+ left: 0;
+ bottom: 0;
+ background:yellow;
+}
+.logo1left::after{
+  transform: scale(0,1);
+  transition: transform 0.3s ease;
+  transform-origin: 0% 100%;
+}
+.logo2left::after{
+  transform: scale(0,1);
+  transition: transform 0.3s ease;
+  transform-origin: 0% 100%;
 }
 .logohome1:after {
   
   content: '';
  position: absolute;
  width: 100%;
- height: 0.175rem;
+ height: 0.01rem;
  left: 0;
  bottom: 0;
- background: rgb(255, 187, 0);
+ background:yellow;
 }
 .logo1left::after{
   transform: scale(0,1);
   transition: transform 0.3s ease;
   transform-origin: 0% 100%;
+}
+.navlink{
+  height: 3rem;
 }
 .logotoken{
   max-width: 18rem;
@@ -232,6 +345,9 @@ h2{
 .logo1left:hover::after{
  transform: scale(1,1);
 }
+.logo2left:hover::after{
+  transform: scale(1,1);
+ }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
