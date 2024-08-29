@@ -235,7 +235,7 @@ const Landing = () => {
                 <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                     <Row>
                         <Col>
-                           <a href='https://exbitron.com/trade?market=wart-usdt'> <button  className='xButton'><img className='exchangeButton' src={exibitron} alt=''></img><p className='xtext'>exibitron</p></button></a>
+                           <a href='https://exbitron.com/trade?market=wart-usdt'> <button  className='xButton'><img className='exchangeButton' src={exbitron} alt=''></img><p className='xtext'>exibitron</p></button></a>
                         </Col>
                         <Col>
                            <a href='https://xeggex.com/market/WART_USDT'> <button className='xButton'><img className='exchangeButton' src={xeggex} alt=''></img><p className='xtext'>xeggex</p></button> </a>
