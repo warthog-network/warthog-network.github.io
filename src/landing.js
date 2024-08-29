@@ -224,7 +224,7 @@ const Landing = () => {
                         </Col>
                         </Row>
                         <h1 style={{ display: 'flex', justifyContent: 'center' }}>-2025-</h1>
-                        <li>Research on atomic swaps and assess feasibility of implementation in Warthog</li>
+                        <li>Research on atomic swaps and assets feasibility of implementation in Warthog</li>
                         <li>See more details in the "NEWS" tab and in the docs</li>
                         
                     </ul >
