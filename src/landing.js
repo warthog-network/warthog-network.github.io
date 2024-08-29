@@ -214,9 +214,9 @@ const Landing = () => {
                         <Row>
                             <Col>
                         <h4 style={{ display: 'flex', justifyContent: 'center' }}>Q3 2024</h4>
-                        <li>Support P2P browser communication using WebRTC</li>
+                        <li>Support P2P browser communication using WebRTC (currently in beta testing)</li>
                         <li>Add Token support</li>
-                        <li>Create demo of custom matching engine</li>
+                        <li className='check'>Create demo of custom matching engine</li>
                         </Col>
                         <Col>
                         <h3 style={{ display: 'flex', justifyContent: 'center' }} >Q4 2024</h3>
