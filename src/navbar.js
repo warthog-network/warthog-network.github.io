@@ -32,12 +32,12 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body className='backgroundimage'>
               <p>Rethinking the blockchain:</p>
-              <Nav.Link><h2 className='socialsmobile'>
+             <h2 className='socialsmobile'>
         <Nav.Link className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink2'src={github}  alt="logo" /></p>  </Nav.Link>
         <Nav.Link className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink2'src={discord}  alt="logo" /></p>  </Nav.Link>
         <Nav.Link className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink2'src={telegram}  alt="logo" /></p>  </Nav.Link>
         <Nav.Link className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink2'src={twitter}  alt="logo" /></p>  </Nav.Link>
-        </h2></Nav.Link>
+        </h2>
                 <Nav className="justify-content-end flex-grow-1 pe-3 ">
                   <Nav.Link href="/getstarted"><h3  className="logohome2 logo1left">GET STARTED</h3></Nav.Link>
                   <Nav.Link href="/news"><h3  className="logohome2 logo1left">NEWS</h3></Nav.Link>
