@@ -30,16 +30,18 @@ return (
 :   <OffcanvasExample />
 }
       <div className='App'>
+       
 <h2 style={{ display: 'flex', justifyContent: 'center' }}>
         FAQs</h2>
+        <div className='left'>
         <p><strong>Q:</strong> What's algorithm used in this project?</p>
-        <p>A: The new algorithm is called "Janushash". More detailed information you can find here https://www.warthog.network/docs/janushash/</p>
+        <p><strong>A:</strong> The new algorithm is called "Janushash". More detailed information you can find here https://www.warthog.network/docs/janushash/</p>
         <p><strong>Q:</strong> Can I run mining on GPU or CPU only?</p>
         <p>A: No, you can't. Miner uses both GPU and CPU.</p>
         <p><strong>Q:</strong> Where can I find the latest releases of the node+wallet and miner?</p>
-        <p>A: You can find precompiled binaries of Node+Wallet: https://github.com/warthog-network/Warthog/releases
-Miner (Linux and HiveOS builds): https://github.com/CoinFuMasterShifu/janusminer/releases
-See README.md in these repos for usage information.</p>
+        <p>A: You can find precompiled binaries of Node+Wallet:</p><a href='https://github.com/warthog-network/Warthog/releases'> https://github.com/warthog-network/Warthog/releases</a>
+        <p>Miner (Linux and HiveOS builds):</p><a href='https://github.com/CoinFuMasterShifu/janusminer/releases'>https://github.com/CoinFuMasterShifu/janusminer/releases</a>
+<p>See README.md in these repos for usage information.</p>
 <p><strong>Q:</strong> I'm getting this error in miner output:
 [error] API request failed. Are you running the node with RPC endpoint enabled?
 [warning] Could not get mining information, retrying in 100 milliseconds...</p>
@@ -53,7 +55,7 @@ Keep in mind that you can only run one node per public IP.</p>
 <p>A: GPU and CPU compute different hash functions so it can happen if GPU is slow and CPU fast.</p>
 <p><strong>Q:</strong> My node stuck and won't sync?</p>
 <p>A: Make sure you are running the latest version `wart-node-linux --version`. Delete folder with node db files and start the node again. (It locates in home directory `~/.warthog` if you are using Linux and `%AppData%\Local\Warthog` in Windows)</p>
-
+</div>
 </div>
     </div>
   )

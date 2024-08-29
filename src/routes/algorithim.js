@@ -35,7 +35,7 @@ const Algorithim = () => {
 
 return (
   <div className='newsApp'>
-       { (windowDim.winWidth>1000) 
+       { (windowDim.winWidth>1025) 
 ? <Navbar2/> 
 :   <OffcanvasExample />
 }

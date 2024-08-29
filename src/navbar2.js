@@ -7,12 +7,44 @@ import github from './img/github.svg';
 import discord from './img/discord.svg';
 import telegram from './img/telegram.svg';
 import twitter from './img/twitter.svg'
+import { useState,useEffect } from 'react';
 const Navbar2 = () => {
+  
+  const [windowDim, setWindowDim] = useState  ({
+    winWidth:window.innerWidth,
+    
+    });
+    
+    const detectSize = () =>{
+        setWindowDim({
+            winWidth:window.innerWidth,
+        })
+    }
+    
+    useEffect(()=>{
+    window.addEventListener('resize', detectSize)
+    
+    return()=>{
+        window.removeEventListener('resize', detectSize)
+    }
+    },[windowDim])
+
   return (
     <div>   
-      
-      <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
-      <Navbar.Brand className='Brand' href="./"> <img src={logo} className='logo'  alt="logo" /></Navbar.Brand>
+    
+      <Navbar collapseOnSelect expand="sm" bg="black" variant="dark">
+        
+      <Navbar.Brand className='Brand' href="./"> <img src={logo} className='logo'  alt="logo" /> { (windowDim.winWidth>1200) 
+? null 
+ :         <Nav>     <a className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </a>
+        
+ <a className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={discord}  alt="logo" /></p>  </a>
+ 
+ <a className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={telegram}  alt="logo" /></p>  </a>
+ <a className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={twitter}  alt="logo" /></p>  </a>
+ 
+ </Nav>
+} </Navbar.Brand>
    
       
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -51,7 +83,8 @@ const Navbar2 = () => {
                     
                     <p className="logohome1 logo1left" >DOCS</p>
                 </Nav.Link>
-           
+               
+         
           {/*<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
             <NavDropdown.Item as={Link} to={"./movieplayer"}>Lost Hymns</NavDropdown.Item>
             <NavDropdown.Item as={Link} to={"./reader"}>E-Publications</NavDropdown.Item>
@@ -59,20 +92,23 @@ const Navbar2 = () => {
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown>*/}
         </Nav>
-        <Nav>
-        <Nav.Link className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </Nav.Link>
-        <Nav.Link className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={discord}  alt="logo" /></p>  </Nav.Link>
-        <Nav.Link className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={telegram}  alt="logo" /></p>  </Nav.Link>
-        <Nav.Link className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={twitter}  alt="logo" /></p>  </Nav.Link>
-        </Nav>
-         
-         
+      
+        { (windowDim.winWidth<1200) 
+? null 
+ :         <Nav>     <a className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </a>
+        
+ <a className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={discord}  alt="logo" /></p>  </a>
+ 
+ <a className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={telegram}  alt="logo" /></p>  </a>
+ <a className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={twitter}  alt="logo" /></p>  </a>
+ 
+ </Nav>
+}
          
          
       </Navbar.Collapse>
-   
+     
       </Navbar>
-      
       
       
       

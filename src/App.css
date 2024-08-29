@@ -95,9 +95,8 @@ max-width: 100%;
 .Brand{
   padding-left: 1rem;
 }
-.NavSocials{
-  display: flex;
-  justify-content: space-evenly;
+.navlink{
+  height: 2.5rem;
 }
 .roadmap{
   padding: 1rem;
@@ -157,10 +156,10 @@ background-blend-mode: lighten;
   background-image: url("jungle.jpg");
 }
 .logo{
-  height: 4.5rem;
+  height: 4rem;
   
 }
-logohome1
+
 .glamoricons{
  
   object-fit: contain;
@@ -320,7 +319,10 @@ h2{
   transition: transform 0.3s ease;
   transform-origin: 0% 100%;
 }
-.navlink{
+.navlink2{
+  padding: .3rem;
+  border-radius: .5rem;
+  background-color: black;
   height: 3rem;
 }
 .logotoken{
@@ -334,6 +336,10 @@ h2{
   padding: 1.2rem;
   font-size: 1rem;
   font-weight: bold;
+}
+.socialsmobile{
+  display: flex;
+  justify-content: space-evenly;
 }
 .logohome{
   
