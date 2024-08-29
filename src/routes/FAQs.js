@@ -2,6 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import Navbar2 from '../navbar2';
 import OffcanvasExample from '../navbar';
+import { Container } from 'react-bootstrap';
 const FAQs = () => {
   const [windowDim, setWindowDim] = useState  ({
     winWidth:window.innerWidth,
@@ -30,17 +31,19 @@ return (
 :   <OffcanvasExample />
 }
       <div className='App'>
-       
+    <Container> 
 <h2 style={{ display: 'flex', justifyContent: 'center' }}>
         FAQs</h2>
         <div className='left'>
         <p><strong>Q:</strong> What's algorithm used in this project?</p>
-        <p><strong>A:</strong> The new algorithm is called "Janushash". More detailed information you can find here https://www.warthog.network/docs/janushash/</p>
+        <p><strong>A:</strong> The new algorithm is called "Janushash". More detailed information you can find here<a href='https://www.warthog.network/docs/janushash/'>Janushash</a></p>
         <p><strong>Q:</strong> Can I run mining on GPU or CPU only?</p>
         <p>A: No, you can't. Miner uses both GPU and CPU.</p>
         <p><strong>Q:</strong> Where can I find the latest releases of the node+wallet and miner?</p>
-        <p>A: You can find precompiled binaries of Node+Wallet:</p><a href='https://github.com/warthog-network/Warthog/releases'> https://github.com/warthog-network/Warthog/releases</a>
-        <p>Miner (Linux and HiveOS builds):</p><a href='https://github.com/CoinFuMasterShifu/janusminer/releases'>https://github.com/CoinFuMasterShifu/janusminer/releases</a>
+        <p>A: You can find precompiled binaries of Node+Wallet:</p><a href='https://github.com/warthog-network/Warthog/releases'> Node+Wallet-releases</a>
+        
+        <p>Miner (Linux and HiveOS builds):</p>
+        <a href='https://github.com/CoinFuMasterShifu/janusminer/releases'>Janusminer-releases</a>
 <p>See README.md in these repos for usage information.</p>
 <p><strong>Q:</strong> I'm getting this error in miner output:
 [error] API request failed. Are you running the node with RPC endpoint enabled?
@@ -55,8 +58,11 @@ Keep in mind that you can only run one node per public IP.</p>
 <p>A: GPU and CPU compute different hash functions so it can happen if GPU is slow and CPU fast.</p>
 <p><strong>Q:</strong> My node stuck and won't sync?</p>
 <p>A: Make sure you are running the latest version `wart-node-linux --version`. Delete folder with node db files and start the node again. (It locates in home directory `~/.warthog` if you are using Linux and `%AppData%\Local\Warthog` in Windows)</p>
+
 </div>
+</Container>  
 </div>
+
     </div>
   )
 }
