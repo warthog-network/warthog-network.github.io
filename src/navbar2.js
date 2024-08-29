@@ -36,12 +36,12 @@ const Navbar2 = () => {
         
       <Navbar.Brand className='Brand' href="./"> <img src={logo} className='logo'  alt="logo" /> { (windowDim.winWidth>1200) 
 ? null 
- :         <Nav>     <a className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </a>
+ :         <Nav>     <Nav.Link className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </Nav.Link>
         
- <a className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={discord}  alt="logo" /></p>  </a>
+ <Nav.Link className='logohome' href='https://discord.com/invite/QMDV8bGTdQ'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={discord}  alt="logo" /></p>  </Nav.Link>
  
- <a className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={telegram}  alt="logo" /></p>  </a>
- <a className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={twitter}  alt="logo" /></p>  </a>
+ <Nav.Link className='logohome' href='https://t.me/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={telegram}  alt="logo" /></p>  </Nav.Link>
+ <Nav.Link className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={twitter}  alt="logo" /></p>  </Nav.Link>
  
  </Nav>
 } </Navbar.Brand>
