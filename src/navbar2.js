@@ -62,9 +62,9 @@ const Navbar2 = () => {
     
     <p className="logohome1 logo1left" >NEWS</p>
 </Nav.Link>
-<Nav.Link className="logohome " as={Link} to={"/algorithim"}>
+<Nav.Link className="logohome " as={Link} to={"/algorithm"}>
                     
-                    <p className="logohome1 logo1left" >ALGORITHIM</p>
+                    <p className="logohome1 logo1left" >ALGORITHM</p>
                 </Nav.Link>
                 
                 <Nav.Link className="logohome " as={Link} to={"/whitepaper"}>
@@ -79,7 +79,7 @@ const Navbar2 = () => {
                     
                     <p className="logohome1 logo1left" >EXPLORER</p>
                 </Nav.Link>
-                <Nav.Link className="logohome " as={Link} to={"https://www.warthog.network/docs/"}>
+                <Nav.Link className="logohome "  target="_blank" as={Link} to={"https://www.warthog.network/docs/"}>
                     
                     <p className="logohome1 logo1left" >DOCS</p>
                 </Nav.Link>

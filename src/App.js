@@ -9,7 +9,7 @@ import Landing from "./landing";
 import News from "./routes/news";
 import Getstarted from "./routes/getstarted";
 import Whitepaper from './routes/whitepaper';
-import Algorithim from './routes/algorithim';
+import ALGORITHM from './routes/algorithm';
 import FAQs from './routes/FAQs';
 function App() {
   
@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<Landing />}  />
         <Route path="/getstarted" element={<Getstarted />}  />
         <Route path="/news" element={<News />}  />
-        <Route path="/algorithim" element={<Algorithim />}  />
+        <Route path="/algorithm" element={<ALGORITHM />}  />
         <Route path="/whitepaper" element={<Whitepaper />}  />
         <Route path="/faq" element={<FAQs />}  />
       

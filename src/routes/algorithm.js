@@ -12,7 +12,7 @@ import pobw6 from '../img/pobw6.png'
 import pobw7 from '../img/pobw7.png'
 
 
-const Algorithim = () => {
+const Algorithm = () => {
   const [windowDim, setWindowDim] = useState  ({
     winWidth:window.innerWidth,
     
@@ -54,4 +54,4 @@ return (
   )
 }
 
-export default Algorithim
+export default Algorithm
