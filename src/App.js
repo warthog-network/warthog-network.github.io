@@ -16,15 +16,15 @@ function App() {
   const rootElement = document.getElementById("root");
   render(
     
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
      
       <Routes>
         
-        <Route path="/" element={<Home />}  >
-        <Route path="/" element={<Landing />}  />
-        <Route path="/getstarted" element={<Getstarted />}  />
-        <Route path="/news" element={<News />}  />
-        <Route path="/algorithm" element={<ALGORITHM />}  />
+        <Route exact path="/" element={<Home />}  >
+        <Route exact path="/" element={<Landing />}  />
+        <Route exact path="/getstarted" element={<Getstarted />}  />
+        <Route exact path="/news" element={<News />}  />
+        <Route exact path="/algorithm" element={<ALGORITHM />}  />
         <Route path="/whitepaper" element={<Whitepaper />}  />
         <Route path="/faq" element={<FAQs />}  />
       

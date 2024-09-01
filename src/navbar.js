@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import logo from './img/shortyellowlogo.svg';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { Link } from "react-router-dom";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import github from './img/github.svg';
 import discord from './img/discord.svg';
@@ -39,11 +39,11 @@ function OffcanvasExample() {
         <Nav.Link className='logohome' href='https://x.com/warthognetwork'>   <p className='logohome2 logo1left ' ><img  className='navlink2'src={twitter}  alt="logo" /></p>  </Nav.Link>
         </h2>
                 <Nav className="justify-content-end flex-grow-1 pe-3 ">
-                  <Nav.Link href="/getstarted"><h3  className="logohome2 logo1left">GET STARTED</h3></Nav.Link>
-                  <Nav.Link href="/news"><h3  className="logohome2 logo1left">NEWS</h3></Nav.Link>
-                  <Nav.Link href="/algorithm"><h3  className="logohome2 logo1left">ALGORITHM</h3></Nav.Link>
-                  <Nav.Link href="/whitepaper"><h3  className="logohome2 logo1left">WHITEPAPER</h3></Nav.Link>
-                  <Nav.Link href="/faq"><h3  className="logohome2 logo1left">FAQs</h3></Nav.Link>
+                  <Nav.Link as={Link} to={"/getstarted"}><h3  className="logohome2 logo1left">GET STARTED</h3></Nav.Link>
+                  <Nav.Link as={Link} to={"/news"}><h3  className="logohome2 logo1left">NEWS</h3></Nav.Link>
+                  <Nav.Link as={Link} to={"/algorithm"}><h3  className="logohome2 logo1left">ALGORITHM</h3></Nav.Link>
+                  <Nav.Link as={Link} to={"/whitepaper"}><h3  className="logohome2 logo1left">WHITEPAPER</h3></Nav.Link>
+                  <Nav.Link as={Link} to={"/faq"}><h3  className="logohome2 logo1left">FAQs</h3></Nav.Link>
                   <Nav.Link href="https://wartscan.io/"><h3  className="logohome2 logo1left">EXPLORER</h3></Nav.Link>
                   <Nav.Link target="_blank" href="https://www.warthog.network/docs/"><h3  className="logohome2 logo1left">DOCS</h3></Nav.Link>
               
