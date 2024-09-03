@@ -94,7 +94,7 @@ max-width: 100%;
   position: relative;
 }
 .font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family:  "Montserrat";
 }
 .Brand{
   padding-left: 1rem;
@@ -169,10 +169,10 @@ background-blend-mode: lighten;
   object-fit: contain;
 height: 4rem;
 }
-
+/*
  *{
   outline: 1px solid red;
- }/*
+ }
 .ocheader{
   background-color: #282c34;
 }*/
@@ -193,12 +193,17 @@ height: 4rem;
 .paragraph{
   box-shadow: -3px 7px 5px 5px rgb(70, 67, 67);
   padding: .5rem;
-  font-size: larger;
+  font-size: 1.6rem;
   min-width: 15rem;
   max-width: 35rem;
   border-radius: .5rem;
   background-color: white;
-  
+}
+.paragraph:hover{
+  box-shadow: 10px 5px 5px rgb(37, 37, 37);
+  padding: .5rem;
+ cursor: crosshair;
+  border-radius: .5rem;
 }
 .KEYBLOCK{
   padding-top: .5rem;
@@ -212,13 +217,7 @@ height: 4rem;
   background-color: rgb(209, 195, 155);
   border-radius: 2rem;
 }
-.paragraph:hover{
-  box-shadow: 10px 5px 5px rgb(37, 37, 37);
-  padding: .5rem;
-  font-size: larger;
- cursor: crosshair;
-  border-radius: .5rem;
-}
+
 .warthognetwork{
  
   font-size: 5rem;
@@ -328,6 +327,7 @@ h2{
  
 
 }
+font-mono
 .logohome2:after {
   
   content: '';
