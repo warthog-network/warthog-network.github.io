@@ -8,6 +8,8 @@ import github from './img/github.svg';
 import discord from './img/discord.svg';
 import telegram from './img/telegram.svg';
 import twitter from './img/twitter.svg'
+
+import { motion } from "framer-motion";
 function OffcanvasExample() {
   return (
     <div> 
@@ -16,7 +18,10 @@ function OffcanvasExample() {
         <Navbar key={expand} collapse="sm" bg="black" expand={expand} className="mb-3 ">
             
           <Container  fluid>
-            <Navbar.Brand  href="/"><img className="logo" src={logo}  alt=""/></Navbar.Brand>
+            <Navbar.Brand  href="/"><motion.img 
+            initial={{y:'-10rem'}}
+            animate={{ y:'0rem'}}
+            className="logo" src={logo}  alt=""/></Navbar.Brand>
             <Navbar.Toggle  aria-controls={` offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas 
               id={`offcanvasNavbar-expand-${expand}`}
@@ -24,7 +29,10 @@ function OffcanvasExample() {
               placement="end"
             >
               <Offcanvas.Header  className='ocheader'  closeButton>
-              <a href="/"><img  className="logo" src={logo} alt=""/></a>
+              <motion.a href="/"  initial={{y:'-10rem'}}
+              animate={{ y:'1rem'}} ><img  
+             
+              className="logo" src={logo} alt=""/></motion.a>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                 
                 </Offcanvas.Title>

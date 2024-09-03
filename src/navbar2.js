@@ -8,6 +8,7 @@ import discord from './img/discord.svg';
 import telegram from './img/telegram.svg';
 import twitter from './img/twitter.svg'
 import { useState,useEffect } from 'react';
+import { motion } from "framer-motion";
 const Navbar2 = () => {
   
   const [windowDim, setWindowDim] = useState  ({
@@ -34,7 +35,10 @@ const Navbar2 = () => {
     
       <Navbar collapseOnSelect expand="sm" bg="black" variant="dark">
         
-      <Navbar.Brand className='Brand' href="./"> <img src={logo} className='logo'  alt="logo" /> { (windowDim.winWidth>1200) 
+      <Navbar.Brand className='Brand' href="./"> <motion.img 
+      initial={{y:'-10rem'}}
+      animate={{ y:'0rem'}}
+      src={logo} className='logo'  alt="logo" /> { (windowDim.winWidth>1200) 
 ? null 
  :         <Nav>     <Nav.Link className='logohome' href='https://github.com/warthog-network'>   <p className='logohome2 logo1left ' ><img  className='navlink'src={github}  alt="logo" /></p>  </Nav.Link>
         

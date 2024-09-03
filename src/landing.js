@@ -18,8 +18,7 @@ import Keyfacts from './components/kefacts';
 import Revfeatures from './components/revfeatures';
 import Contributor from './components/contributor';
 const Landing = () => {
-    const text = "WARTHOG NETWORK".split(" ");
-
+   
     const [windowDim, setWindowDim] = useState({
         winWidth: window.innerWidth,
 
@@ -46,22 +45,18 @@ const Landing = () => {
                 ? <Navbar2 />
                 : <OffcanvasExample />
             }
-            <Container className='landCont font-mono'>
+            <Container className=' font-mono'>
                 <Row>
                     <Col>
-                        <h1 className='Keyfacts '>     {text.map((el, i) => (
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            delay: i / 1000
-          }}
-          key={i}
+                          
+        <motion.h2 className='warthognetwork'
+        initial={{x:'-20rem'}}
+        animate={{ x:'2rem'}}
+        
         >
-          {el}{" "}
-        </motion.span>
-      ))}</h1><br />
+          Warthog Network
+        </motion.h2>
+      <br />
 
                         <h2 className=' keyheaders'>-Rethinking the blockchain-</h2><br />
                         <p className='paragraph'><strong>"Warthog’s decentralized network empowers individuals with fair, balanced, and synergized CPU/GPU work. It secures hardcoded DeFi and token technologies, eliminating the risks of smart contracts. Our goal is a safer, more efficient blockchain, aligned with the original vision of cryptocurrency: "one CPU, one vote."</strong></p>

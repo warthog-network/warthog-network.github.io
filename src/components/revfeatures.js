@@ -6,8 +6,8 @@ const Revfeatures = () => {
     
     <div>
     <Row><h1 className='Keyfacts font-mono' style={{ display: 'flex', justifyContent: 'center' }}>REVOLUTIONARY FEATURES</h1>
-    <div>
-        <p className='paragraph Keyfacts'>Warthog is a pioneer pushing the boundaries of blockchain technology. The following features are exclusive to Warthog.</p>
+    <div className='center '>
+        <p className= 'paragraph '>Warthog is a pioneer pushing the boundaries of blockchain technology. The following features are exclusive to Warthog.</p>
         </div>
         <Col>
             <h2 className='keyheaders'>Chain descriptor based sync<span class="text-icon">🔁</span></h2><p className='REVOLUTIONARY'>Experimental new light-weight sync mechanism which requires less network communication and computational resources. For the first time, nodes can understand each other's forks and use this information to sync more efficiently.</p></Col>

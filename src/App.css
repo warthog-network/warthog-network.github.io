@@ -170,13 +170,13 @@ background-blend-mode: lighten;
 height: 4rem;
 }
 
- /**{
+/* *{
   outline: 1px solid red;
  }
 .ocheader{
   background-color: #282c34;
-}
-*/
+}*/
+
 .xtext{
   color: yellow;
 }
@@ -198,17 +198,31 @@ height: 4rem;
   max-width: 35rem;
   border-radius: .5rem;
   background-color: white;
+  
 }
-
-
+.KEYBLOCK{
+  padding-top: .5rem;
+  opacity: 80%;
+  background-color: rgb(209, 195, 155);
+  border-radius: 2rem;
+}
+.REVBLOCK{
+  padding-top: .5rem;
+  opacity: 80%;
+  background-color: rgb(209, 195, 155);
+  border-radius: 2rem;
+}
 .paragraph:hover{
-  box-shadow: -3px 7px 5px 5px rgb(70, 67, 67);
+  box-shadow: 10px 5px 5px rgb(37, 37, 37);
   padding: .5rem;
   font-size: larger;
- 
+ cursor: crosshair;
   border-radius: .5rem;
 }
-
+.warthognetwork{
+  margin-right: 2rem;
+  font-size: 5rem;
+}
 
 
 .paragetstart{
