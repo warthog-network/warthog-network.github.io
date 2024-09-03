@@ -3,10 +3,10 @@ import OffcanvasExample from './navbar';
 import './App.css';
 import { TbBrowserCheck } from "react-icons/tb";
 import { useState,useEffect } from 'react';
-import wartcoin from './soldierwart.webp';
-import tokengraph from './tokenomics.png';
-import sandwich from './sandwich.webp';
-import sandwiches from './sandwichproblem.webp';
+import wartcoin from './img/soldierwart.webp';
+import tokengraph from './img/tokenomics.png';
+import sandwich from './img/sandwich.webp';
+import sandwiches from './img/sandwichproblem.webp';
 import { BiSolidChevronsDown } from "react-icons/bi";
 import Navbar2 from './navbar2';
 import exibitron from './img/exibitron.png'
