@@ -51,7 +51,7 @@ const Landing = () => {
                           
         <motion.h2 className='warthognetwork'
         initial={{x:'-20rem'}}
-        animate={{ x:'2rem'}}
+        animate={{ x:'0rem'}}
         
         >
           Warthog Network
