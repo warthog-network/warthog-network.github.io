@@ -1,8 +1,12 @@
 
 .backdrop{
+  
   justify-content: center;
   align-items: center;
-  background-color: rgb(243, 237, 237);
+  background-color: rgba(255, 255, 255, 0.774);
+  background-blend-mode: color-burn;
+  color: #000000;
+  background-image: url("img/jungle.jpg");
 }
 .outline{
   border-style: solid;
@@ -187,13 +191,24 @@ height: 4rem;
 }
 
 .paragraph{
-  
+  box-shadow: -3px 7px 5px 5px rgb(70, 67, 67);
   padding: .5rem;
   font-size: larger;
   min-width: 15rem;
   max-width: 35rem;
   border-radius: .5rem;
+  background-color: white;
 }
+
+
+.paragraph:hover{
+  box-shadow: -3px 7px 5px 5px rgb(70, 67, 67);
+  padding: .5rem;
+  font-size: larger;
+ 
+  border-radius: .5rem;
+}
+
 
 
 .paragetstart{
@@ -234,7 +249,20 @@ flex-direction: column;
   max-width: 25rem;
   border-radius: .5rem;
   background-color: rgb(255, 255, 255);}
-  
+  .keyfacts:hover{
+    border-style: solid;
+    border-width: .1rem;
+    box-shadow: 10px 5px 5px rgb(37, 37, 37);
+    padding: .5rem;
+    font-size: X-large;
+    min-width: 15rem;
+    max-width: 25rem;
+    border-radius: .5rem;
+    
+    }
+    Col{
+      min-width: 15rem;
+    }
   .keyheaders{
     
     transition-duration: 1s;
@@ -275,6 +303,7 @@ h2{
   position: relative;
  color: rgb(204, 174, 6);
  font-size: medium;
+ 
 }
 .logohome2{  
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

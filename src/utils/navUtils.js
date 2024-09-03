@@ -1,12 +1,32 @@
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 const useNavutils = () => {
 
-    const [show, setShow] = useState(false);
   
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  return {handleClose,handleShow, show,setShow}
-}
+
+  const [windowDim, setWindowDim] = useState  ({
+      winWidth:window.innerWidth,
+      
+      });
+      
+      const detectSize = () =>{
+          setWindowDim({
+              winWidth:window.innerWidth,
+          })
+      }
+      
+      useEffect(()=>{
+      window.addEventListener('resize', detectSize)
+      
+      return()=>{
+          window.removeEventListener('resize', detectSize)
+      }
+      },[windowDim])
+
+return (
+   windowDim
+)
+
+
+    }
 
 export default useNavutils;
