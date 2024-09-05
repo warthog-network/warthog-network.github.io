@@ -49,7 +49,7 @@ const Landing = () => {
                 <Row>
                     <Col>
                           
-        <motion.h2 className='warthognetwork'
+        <motion.h2  className='warthognetwork'
         initial={{x:'-20rem'}}
         animate={{ x:'0rem'}}
         
@@ -89,7 +89,7 @@ const Landing = () => {
                 <Row>
                     <p className=''>
 
-                        <h2 className=''> But there is more</h2><p className='paragraph'>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
+                        <h2 className=''> But there is more</h2><p className='paragraph font-bold'>We currently make great progress in solving the Sandwich Problem (front/back running) in DeFi using hard-coded non-smart-contract DeFi and a custom matching engine. This would solve one of the biggest problems of DeFi. In the long run, Warthog shall become a notable player in the DeFi world. Our matching engine shall merge the two different worlds of discrete orders (like in classical exchanges) and continuous liquidity pools. Atomic swaps with other chains are also planned.</p>
 
                     </p>
                 </Row>
@@ -129,7 +129,7 @@ const Landing = () => {
                         </Col>
                     </Row>
                 </div>
-
+<div></div>
             </Container>
 
         </div>

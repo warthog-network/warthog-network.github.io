@@ -52,9 +52,9 @@ const Navbar2 = () => {
    
       
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+    
         <Nav className=" me-auto">
-        <Nav.Link className="logohome " as={Link} to={"/"}>
+        <Nav.Link className="logohome" as={Link} to={"/"}>
                     
                     <p className="logohome1 logo1left" >MAIN</p>
                 </Nav.Link>
@@ -110,8 +110,7 @@ const Navbar2 = () => {
 }
          
          
-      </Navbar.Collapse>
-     
+   
       </Navbar>
       
       

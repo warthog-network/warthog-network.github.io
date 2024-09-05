@@ -12,7 +12,7 @@ const Keyfacts = () => {
 
 
 </h1>
-<div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+<div style={{ padding: '2rem', display: 'flex', justifyContent: 'space-evenly' }}>
     <BiSolidChevronsDown />
     <BiSolidChevronsDown />
 </div>

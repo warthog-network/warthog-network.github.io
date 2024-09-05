@@ -1,4 +1,3 @@
-
 .backdrop{
   
   justify-content: center;
@@ -169,8 +168,8 @@ background-blend-mode: lighten;
   object-fit: contain;
 height: 4rem;
 }
-/*
- *{
+
+/* *{
   outline: 1px solid red;
  }
 .ocheader{
@@ -193,7 +192,7 @@ height: 4rem;
 .paragraph{
   box-shadow: -3px 7px 5px 5px rgb(70, 67, 67);
   padding: .5rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   min-width: 15rem;
   max-width: 35rem;
   border-radius: .5rem;
@@ -219,11 +218,10 @@ height: 4rem;
 }
 
 .warthognetwork{
- 
+
   font-size: 5rem;
   max-width: 25rem;
 }
-
 
 .paragetstart{
   
@@ -327,7 +325,6 @@ h2{
  
 
 }
-font-mono
 .logohome2:after {
   
   content: '';
